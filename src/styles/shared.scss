@@ -29,24 +29,35 @@
   color: white;
 }
 button.btn-c {
-    border: 1px solid #fff;
-    font-size: 18px;
+    font-size: 15px;
     background: transparent;
     color: #fff;
-    padding: 6px 10px;
-    width: calc(100% / 6);
+    padding: 0px 20px;
     box-sizing: border-box;
-    border-bottom: none;
+    border: none;
     cursor: pointer;
+    text-align: right;
+    width: 100%;
 }
 .bottom-fixed {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
+	    position: fixed;
+    top: 0;
+    right: 0;
+    > span {
+          padding: 5px 10px;
+    display: block;
+    }
+    &:hover {
+      .list-dropdown {
+        transform: translateX(0%)
+      }
+    }
+    img {
+      width: 60px;
+    }
 }
 .card-main-wrap {
-  max-width: 640px;
+  max-width: 740px;
   margin: 0 auto;
   padding: 40px 0;
 }
@@ -110,3 +121,28 @@ button.btn-c {
     float: right;
   }
 }
+.social-wrap {
+  text-align: center;
+  > div {
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.2);
+      transition: transform 0.2s linear;
+    }
+  }
+}
+.list-dropdown {
+  position: absolute;
+    right: 0;
+    bottom: 0;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: rgba(0,0,0,0.1);
+    position: relative;
+    width: 100px;
+    left: 0;
+    transform: translateX(100%);
+    transition: transform 0.2s linear;
+}
+

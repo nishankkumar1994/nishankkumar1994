@@ -21,7 +21,19 @@ module.exports = {
         test: /\.scss$/,
         loaders: ["style", "css", "sass"],
         exclude: "/node_modules"
+      },
+      {
+        test: /\.(?:png|jpg|svg)$/,
+        loader: 'url-loader',
+        use: 'file-loader?name=./public/img/[name].[ext]'
+        // options: {
+        //   name: 'images/[name]-[hash].[ext]'
+        // }
       }
+
+
+
+
     ]
   }
 }
