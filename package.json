@@ -12,6 +12,8 @@
   "author": "ccha <hello@christinecha.com> (https://github.com/christinecha)",
   "license": "MIT",
   "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "bootstrap-sass": "^3.3.7",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-google-sheet-connector": "^1.0.1",
