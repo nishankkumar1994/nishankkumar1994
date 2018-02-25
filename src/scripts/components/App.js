@@ -17,7 +17,7 @@ class App extends React.Component {
 	render() {
 		const theme_mmr = localStorage && localStorage.getItem('THEME_COLOR') ? localStorage.getItem('THEME_COLOR'): this.props.theme;
 		return (
-			<div className={theme_mmr}>
+			<div className={`${theme_mmr} nk-vh-100`}>
 				<div className="container">
 					<div className="card-main-wrap">
 						<GoSheetComponent />

@@ -1,4 +1,4 @@
-#app, #main {
+.nk-vh-100 {
   // width: 100vw;
   min-height: 100vh;
 }
@@ -173,4 +173,8 @@ button.btn-c {
     }
   }
 
+}
+.loading-spinner {
+  text-align: center;
+  margin: 0 auto;
 }

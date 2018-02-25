@@ -15,10 +15,11 @@ class GoSheetComponent extends React.Component {
   render() {
     return (
       <div>
+       
         <ReactGoogleSheetConnector
           apiKey={YOUR_API_KEY}
           spreadsheetId={YOUR_SPREADSHEET_ID}
-          spinner={ <div className="loading-spinner"/> } >
+          spinner={ <div className="loading-spinner"><img src="public/img/loader.svg" /></div> } >
             <div className="nk-override-tab">
               <Tabs defaultActiveKey={1} id="uncontrolled-tab-example">
                 <Tab eventKey={1} title="HTML">
