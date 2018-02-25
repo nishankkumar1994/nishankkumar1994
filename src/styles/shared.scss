@@ -146,3 +146,31 @@ button.btn-c {
     transition: transform 0.2s linear;
 }
 
+.nk-override-tab {
+  .tab-content > .active.fade {
+    opacity: 1;
+  }
+  .nav-tabs {
+    border-bottom: none;
+    li {
+      margin: 0px 10px;
+      color: #fff;
+      padding: 3px 5px;
+      border-bottom: 2px solid transparent;
+      &.active   {
+        border-bottom: 2px solid #fff;
+        a {
+          color: #fff;
+        }
+      }
+      a {
+        color: rgba(255,255,255,0.7);
+        font-weight: bold;
+        &:hover, &:focus, &:active  {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+}
