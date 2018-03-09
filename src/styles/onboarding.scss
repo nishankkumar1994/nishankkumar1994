@@ -242,3 +242,12 @@ ul.topic-list {
     cursor: pointer;
 }
 
+.input-search {
+    input {
+        width: 100%;
+        margin: 10px 0px 20px;
+        padding: 5px 10px;
+        color: #000;
+        border-radius: 1px;
+    }
+}

@@ -16,14 +16,23 @@ class Topics extends React.Component {
 		 await this.fetchPlanets();
 		 await this.findMaxInArrar();
 	}
-	async fetchPlanets(count) {
+	async fetchPlanets(e, count) {
 		if(count) {
 		this.state.pageCount++;  
 		}
-		await fetch(`https://swapi.co/api/planets/?page=${this.state.pageCount}`)
+		const searchStr = e && e.target.value ? e.target.value : '';
+		await fetch(`https://swapi.co/api/planets/?search=${searchStr}&page=${this.state.pageCount}`)
 		.then(response => response.json())
-		.then(planets => {this.setState({ planetsTotal: planets.count, data: [...this.state.data, ...planets.results] })});
+		.then(planets => {!searchStr ? this.setState({ planetsTotal: planets.count, data: [...this.state.data, ...planets.results] }) : this.setState({ planetsTotal: planets.count, data: [...planets.results] })});
 	}
+	// async search(e, count) {
+	// 	if(count) {
+	// 		this.state.pageCount++;  
+	// 	}
+	// 	await fetch(`https://swapi.co/api/planets/?search=${e.target.value}&page=${this.state.pageCount}`)
+	// 	.then(response => response.json())
+	// 	.then(planets => {this.setState({ planetsTotal: planets.count, data: [...planets.results] })});
+	// }
 	getUrl(str) {
 		if(str) {
 		let arr = str.split('/');
@@ -34,11 +43,9 @@ class Topics extends React.Component {
 	findMaxInArrar() {
 		let max = 0;
 		for(let i=0; i<this.state.data.length; i++){
-		console.log(this.state.data[i].population);
-		if(this.state.data[i].population != 'unknown'){
-		max = Math.max(max, this.state.data[i].population);
-		}
-		console.log(max);
+			if(this.state.data[i].population != 'unknown'){
+				max = Math.max(max, this.state.data[i].population);
+			}
 		}
 		this.setState({ totalPopulation: max })
 	}
@@ -50,6 +57,9 @@ class Topics extends React.Component {
 	return (
 		 <Layout>
 			<h2>Planets - {this.state.planetsTotal}</h2>
+			<div className="input-search">
+				<input type="text" placeholder="Search by name here..." onChange={(e)=>this.fetchPlanets(e)} />
+			</div>
 			<ul className="topic-list">
 				{this.state.data && this.state.data.map((item, id) => (
 				 <li key={id} className={`color-${randomColorWR()}`}><Link to={`/topics/${this.getUrl(item.url)}`}>
@@ -70,7 +80,7 @@ class Topics extends React.Component {
 							containerClassName={'progressbar'} />
 					</Link></li>
 				))}
-				<button className="btn btn-primary load-more-btn" onClick={()=>this.fetchPlanets(true)}>load More</button>
+				<button className="btn btn-primary load-more-btn" onClick={()=>this.fetchPlanets(null, true)}>load More</button>
 			</ul>    
 		</Layout>
 		)
