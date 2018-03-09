@@ -1315,7 +1315,7 @@
 
 
 	// module
-	exports.push([module.id, "* {\n  margin: 0;\n  padding: 0; }\n\n.light, .dark {\n  background: linear-gradient(45deg, rgba(12, 147, 207, 0.93) 0, rgba(0, 169, 128, 0.93) 97%);\n  color: white; }\n\n.light1 {\n  background: linear-gradient(45deg, #93a5cf 0, #e4efe9 97%);\n  color: white; }\n\n.light2 {\n  background: linear-gradient(45deg, #B7F8DB 0, #50A7C2 97%);\n  color: white; }\n\n.light3 {\n  background: linear-gradient(45deg, #ffafbd 0, #ffc3a0 97%);\n  color: white; }\n\n.light4 {\n  background: linear-gradient(45deg, #cc2b5e 0, #753a88 97%);\n  color: white; }\n\n.light5 {\n  background: linear-gradient(45deg, #36d1dc 0, #5b86e5 97%);\n  color: white; }\n\nbutton.btn-c {\n  font-size: 15px;\n  background: transparent;\n  color: #fff;\n  padding: 0px 20px;\n  box-sizing: border-box;\n  border: none;\n  cursor: pointer;\n  text-align: right;\n  width: 100%; }\n\n.bottom-fixed {\n  position: fixed;\n  top: 0;\n  right: 0; }\n  .bottom-fixed > span {\n    padding: 5px 10px;\n    display: block; }\n  .bottom-fixed:hover .list-dropdown {\n    transform: translateX(0%); }\n  .bottom-fixed img {\n    width: 60px; }\n\n.card-main-wrap {\n  max-width: 740px;\n  margin: 0 auto;\n  padding: 40px 0; }\n\n.card-wrap {\n  padding: 40px;\n  margin: 20px 0;\n  background: rgba(0, 0, 0, 0.2);\n  position: relative;\n  box-shadow: 0 0 16px 0px rgba(255, 255, 255, 0.5); }\n  .card-wrap .card-que span {\n    position: absolute;\n    width: 40px;\n    background: rgba(255, 255, 255, 0.2);\n    border-radius: 50%;\n    box-sizing: border-box;\n    height: 40px;\n    text-align: center;\n    padding: 8px 0;\n    left: -50px;\n    top: calc(50% - 20px);\n    font-style: normal; }\n  .card-wrap .card-que {\n    font-size: 16px;\n    font-style: italic;\n    margin-bottom: 10px;\n    color: rgba(255, 255, 255, 0.8); }\n  .card-wrap .card-label {\n    float: left;\n    font-size: 14px; }\n  .card-wrap .card-author {\n    position: absolute;\n    background: rgba(0, 0, 0, 0.2);\n    box-sizing: border-box;\n    height: 26px;\n    padding: 0px 10px;\n    right: 0;\n    bottom: 0;\n    font-style: normal;\n    width: 100%;\n    text-align: right;\n    font-size: 14px; }\n    .card-wrap .card-author .card-author-label {\n      font-style: italic; }\n  .card-wrap .card-author-wrap {\n    float: right; }\n\n.social-wrap {\n  text-align: center; }\n  .social-wrap > div {\n    display: inline-block;\n    margin: 10px;\n    cursor: pointer; }\n    .social-wrap > div:hover {\n      transform: scale(1.2);\n      transition: transform 0.2s linear; }\n\n.list-dropdown {\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  border: 1px solid rgba(0, 0, 0, 0.1);\n  background: rgba(0, 0, 0, 0.1);\n  position: relative;\n  width: 100px;\n  left: 0;\n  transform: translateX(100%);\n  transition: transform 0.2s linear; }\n\n.nk-override-tab .tab-content > .active.fade {\n  opacity: 1; }\n\n.nk-override-tab .nav-tabs {\n  border-bottom: none; }\n  .nk-override-tab .nav-tabs li {\n    margin: 0px 10px;\n    color: #fff;\n    padding: 3px 5px;\n    border-bottom: 2px solid transparent; }\n    .nk-override-tab .nav-tabs li.active {\n      border-bottom: 2px solid #fff; }\n      .nk-override-tab .nav-tabs li.active a {\n        color: #fff; }\n    .nk-override-tab .nav-tabs li a {\n      color: rgba(255, 255, 255, 0.7);\n      font-weight: bold; }\n      .nk-override-tab .nav-tabs li a:hover, .nk-override-tab .nav-tabs li a:focus, .nk-override-tab .nav-tabs li a:active {\n        text-decoration: none; }\n\n.loading-spinner {\n  text-align: center;\n  margin: 0 auto; }\n\n.header-fixed {\n  background-color: #292c2f;\n  box-shadow: 0 1px 1px #ccc;\n  padding: 20px 40px;\n  height: 80px;\n  color: #ffffff;\n  box-sizing: border-box;\n  top: -100px;\n  -webkit-transition: top 0.3s;\n  transition: top 0.3s; }\n\n.header-fixed .header-limiter {\n  max-width: 1200px;\n  text-align: center;\n  margin: 0 auto; }\n\n/*  The header placeholder. It is displayed when the header is fixed to the top of the\r\n    browser window, in order to prevent the content of the page from jumping up. */\n.header-fixed-placeholder {\n  height: 80px;\n  display: none; }\n\n/* Logo */\n.header-fixed .header-limiter h1 {\n  float: left;\n  font: normal 28px Cookie, Arial, Helvetica, sans-serif;\n  line-height: 40px;\n  margin: 0; }\n\n.header-fixed .header-limiter h1 span {\n  color: #5383d3; }\n\n/* The navigation links */\n.header-fixed .header-limiter a {\n  color: #ffffff;\n  text-decoration: none; }\n\n.header-fixed .header-limiter nav {\n  font: 16px Arial, Helvetica, sans-serif;\n  line-height: 40px;\n  float: right; }\n\n.header-fixed .header-limiter nav a {\n  display: inline-block;\n  padding: 0 5px;\n  text-decoration: none;\n  color: #ffffff;\n  opacity: 0.9; }\n\n.header-fixed .header-limiter nav a:hover {\n  opacity: 1; }\n\n.header-fixed .header-limiter nav a.selected {\n  color: #608bd2;\n  pointer-events: none;\n  opacity: 1; }\n\n/* Fixed version of the header */\nbody.fixed .header-fixed {\n  padding: 10px 40px;\n  height: 50px;\n  position: fixed;\n  width: 100%;\n  top: 0;\n  left: 0;\n  z-index: 1; }\n\nbody.fixed .header-fixed-placeholder {\n  display: block; }\n\nbody.fixed .header-fixed .header-limiter h1 {\n  font-size: 24px;\n  line-height: 30px; }\n\nbody.fixed .header-fixed .header-limiter nav {\n  line-height: 28px;\n  font-size: 13px; }\n\n/* Making the header responsive */\n@media all and (max-width: 600px) {\n  .header-fixed {\n    padding: 20px 0;\n    height: 75px; }\n  .header-fixed .header-limiter h1 {\n    float: none;\n    margin: -8px 0 10px;\n    text-align: center;\n    font-size: 24px;\n    line-height: 1; }\n  .header-fixed .header-limiter nav {\n    line-height: 1;\n    float: none; }\n  .header-fixed .header-limiter nav a {\n    font-size: 13px; }\n  body.fixed .header-fixed {\n    display: none; } }\n\n/*\r\n     We are clearing the body's margin and padding, so that the header fits properly.\r\n     We are also adding a height to demonstrate the scrolling behavior. You can remove\r\n     these styles.\r\n */\n.main-container {\n  max-width: 960px;\n  margin: 0 auto; }\n\n.login-body {\n  background: url(\"http://i.imgur.com/Eor57Ae.jpg\") no-repeat fixed center center;\n  background-size: cover;\n  font-family: Montserrat;\n  padding: 1px 0;\n  min-height: 100vh; }\n\n.logo {\n  width: 213px;\n  height: 36px;\n  background: url(\"http://i.imgur.com/fd8Lcso.png\") no-repeat;\n  margin: 30px auto; }\n\n.login-block {\n  width: 320px;\n  padding: 20px;\n  background: #fff;\n  border-radius: 5px;\n  border-top: 5px solid #ff656c;\n  margin: 0 auto; }\n\n.login-block h1 {\n  text-align: center;\n  color: #000;\n  font-size: 18px;\n  text-transform: uppercase;\n  margin-top: 0;\n  margin-bottom: 20px; }\n\n.login-block input {\n  width: 100%;\n  height: 42px;\n  box-sizing: border-box;\n  border-radius: 5px;\n  border: 1px solid #ccc;\n  margin-bottom: 20px;\n  font-size: 14px;\n  font-family: Montserrat;\n  padding: 0 20px 0 50px;\n  outline: none; }\n\n.login-block input#username {\n  background: #fff url(\"http://i.imgur.com/u0XmBmv.png\") 20px top no-repeat;\n  background-size: 16px 80px; }\n\n.login-block input#username:focus {\n  background: #fff url(\"http://i.imgur.com/u0XmBmv.png\") 20px bottom no-repeat;\n  background-size: 16px 80px; }\n\n.login-block input#password {\n  background: #fff url(\"http://i.imgur.com/Qf83FTt.png\") 20px top no-repeat;\n  background-size: 16px 80px; }\n\n.login-block input#password:focus {\n  background: #fff url(\"http://i.imgur.com/Qf83FTt.png\") 20px bottom no-repeat;\n  background-size: 16px 80px; }\n\n.login-block input:active, .login-block input:focus {\n  border: 1px solid #ff656c; }\n\n.login-block button {\n  width: 100%;\n  height: 40px;\n  background: #ff656c;\n  box-sizing: border-box;\n  border-radius: 5px;\n  border: 1px solid #e15960;\n  color: #fff;\n  font-weight: bold;\n  text-transform: uppercase;\n  font-size: 14px;\n  font-family: Montserrat;\n  outline: none;\n  cursor: pointer; }\n\n.login-block button:hover {\n  background: #ff7b81; }\n\nul.topic-list {\n  margin-bottom: 14px;\n  list-style: none; }\n  ul.topic-list li {\n    height: 30px;\n    margin: 0 0 7px 0;\n    position: relative; }\n  ul.topic-list li a {\n    display: block;\n    height: 30px;\n    margin: 0 0 7px 0;\n    background: #F7F5F2 url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAcCAYAAACQ0cTtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAcVJREFUSEvtVtFNxDAM7QiMwAiMwAiMwAhs4PZSic8bgRFuhI5wI3QERjjyYjuJrnaagoSExElRT4njZzvPLxmG/99vVIBofhrHcB6neYnjM46bfBfME4XnH8cBJwIA5zoAqKOaD+u3QSUTdjaGD6LTixU95rGeg4mZHsqybO6PNpV6ClcNrguQpjBylOFKRA9dm8QI9hVgO0OOjg/fA6LT/IqA8LXLWgCbZ6hkaBlVhFm8rIVYCNq2IXp/lKxcJ3DeAyZ2F/hDtTZB0TS/pUWnPLqhFyyxFP5iyTdgykBk2CKFBeadr1spdWIB1cy8B1MGOvtW89zaYKUVarCa6jYYK822jCxBN2eTyBKaVhqX7RMJGvugowYYC63JHpCm0sZaJ9N/i1ScdQrksmWjOAQrzWZ1AE22RQcaoOmvRBJWt1mzlMkNEAXYsy0C4bA709/JLjWrKnwDSHsMtm4bSXY41KiNRuer4DYaX/RVfLR7dshR7QDaIpyEPN3ke0qU99fs8whwDyZydwxInUiG8t4Iq/XWgLozSFzXq2lHW5tnKJepgOZ3yKbX+Omwc0Yt0a3XkKkAQzWSDKVLFPMHb/RezL9l9wWuQAy9JbrovAAAAABJRU5ErkJggg==) 97% center no-repeat;\n    font-size: 16px;\n    line-height: 1.2;\n    color: #333;\n    padding: 5px 0 0 20px;\n    text-decoration: none; }\n  ul.topic-list li a:hover {\n    background-color: #EFEFEF; }\n  ul.topic-list li.color-0 {\n    border-left: 5px maroon solid; }\n  ul.topic-list li.color-1 {\n    border-left: 5px #802000 solid; }\n  ul.topic-list li.color-2 {\n    border-left: 5px #804000 solid; }\n  ul.topic-list li.color-3 {\n    border-left: 5px #806000 solid; }\n  ul.topic-list li.color-4 {\n    border-left: 5px olive solid; }\n  ul.topic-list li.color-5 {\n    border-left: 5px #608000 solid; }\n  ul.topic-list li.color-6 {\n    border-left: 5px #408000 solid; }\n  ul.topic-list li.color-7 {\n    border-left: 5px #208000 solid; }\n  ul.topic-list li.color-8 {\n    border-left: 5px green solid; }\n  ul.topic-list li.color-9 {\n    border-left: 5px #008020 solid; }\n  ul.topic-list li.color-10 {\n    border-left: 5px solid #008040; }\n  ul.topic-list li.color-11 {\n    border-left: 5px solid #008060; }\n  ul.topic-list li.color-12 {\n    border-left: 5px solid teal; }\n  ul.topic-list li.color-13 {\n    border-left: 5px solid #006080; }\n  ul.topic-list li.color-14 {\n    border-left: 5px solid #004080; }\n  ul.topic-list li.color-15 {\n    border-left: 5px solid #002080; }\n  ul.topic-list li.color-16 {\n    border-left: 5px solid navy; }\n  ul.topic-list li.color-17 {\n    border-left: 5px solid #200080; }\n  ul.topic-list li.color-18 {\n    border-left: 5px solid #400080; }\n  ul.topic-list li.color-19 {\n    border-left: 5px solid #600080; }\n  ul.topic-list li.color-20 {\n    border-left: 5px solid purple; }\n  ul.topic-list li.color-21 {\n    border-left: 5px solid #800060; }\n  ul.topic-list li.color-22 {\n    border-left: 5px solid #800040; }\n  ul.topic-list li.color-23 {\n    border-left: 5px solid #800020; }\n  ul.topic-list li.color-24 {\n    border-left: 5px solid maroon; }\n\n.progressbar {\n  display: inline-block;\n  height: 100%;\n  width: 100%;\n  position: absolute;\n  left: 0;\n  top: 0; }\n  .progressbar svg {\n    height: 100% !important; }\n\n.table-form li {\n  list-style: none; }\n  .table-form li span {\n    display: inline-block;\n    padding: 10px; }\n    .table-form li span.left {\n      text-transform: capitalize;\n      min-width: 130px; }\n    .table-form li span.right {\n      min-width: 150px; }\n\n.load-more-btn {\n  margin: 20px auto;\n  width: 200px;\n  display: block;\n  padding: 5px;\n  cursor: pointer; }\n", ""]);
+	exports.push([module.id, "* {\n  margin: 0;\n  padding: 0; }\n\n.light, .dark {\n  background: linear-gradient(45deg, rgba(12, 147, 207, 0.93) 0, rgba(0, 169, 128, 0.93) 97%);\n  color: white; }\n\n.light1 {\n  background: linear-gradient(45deg, #93a5cf 0, #e4efe9 97%);\n  color: white; }\n\n.light2 {\n  background: linear-gradient(45deg, #B7F8DB 0, #50A7C2 97%);\n  color: white; }\n\n.light3 {\n  background: linear-gradient(45deg, #ffafbd 0, #ffc3a0 97%);\n  color: white; }\n\n.light4 {\n  background: linear-gradient(45deg, #cc2b5e 0, #753a88 97%);\n  color: white; }\n\n.light5 {\n  background: linear-gradient(45deg, #36d1dc 0, #5b86e5 97%);\n  color: white; }\n\nbutton.btn-c {\n  font-size: 15px;\n  background: transparent;\n  color: #fff;\n  padding: 0px 20px;\n  box-sizing: border-box;\n  border: none;\n  cursor: pointer;\n  text-align: right;\n  width: 100%; }\n\n.bottom-fixed {\n  position: fixed;\n  top: 0;\n  right: 0; }\n  .bottom-fixed > span {\n    padding: 5px 10px;\n    display: block; }\n  .bottom-fixed:hover .list-dropdown {\n    transform: translateX(0%); }\n  .bottom-fixed img {\n    width: 60px; }\n\n.card-main-wrap {\n  max-width: 740px;\n  margin: 0 auto;\n  padding: 40px 0; }\n\n.card-wrap {\n  padding: 40px;\n  margin: 20px 0;\n  background: rgba(0, 0, 0, 0.2);\n  position: relative;\n  box-shadow: 0 0 16px 0px rgba(255, 255, 255, 0.5); }\n  .card-wrap .card-que span {\n    position: absolute;\n    width: 40px;\n    background: rgba(255, 255, 255, 0.2);\n    border-radius: 50%;\n    box-sizing: border-box;\n    height: 40px;\n    text-align: center;\n    padding: 8px 0;\n    left: -50px;\n    top: calc(50% - 20px);\n    font-style: normal; }\n  .card-wrap .card-que {\n    font-size: 16px;\n    font-style: italic;\n    margin-bottom: 10px;\n    color: rgba(255, 255, 255, 0.8); }\n  .card-wrap .card-label {\n    float: left;\n    font-size: 14px; }\n  .card-wrap .card-author {\n    position: absolute;\n    background: rgba(0, 0, 0, 0.2);\n    box-sizing: border-box;\n    height: 26px;\n    padding: 0px 10px;\n    right: 0;\n    bottom: 0;\n    font-style: normal;\n    width: 100%;\n    text-align: right;\n    font-size: 14px; }\n    .card-wrap .card-author .card-author-label {\n      font-style: italic; }\n  .card-wrap .card-author-wrap {\n    float: right; }\n\n.social-wrap {\n  text-align: center; }\n  .social-wrap > div {\n    display: inline-block;\n    margin: 10px;\n    cursor: pointer; }\n    .social-wrap > div:hover {\n      transform: scale(1.2);\n      transition: transform 0.2s linear; }\n\n.list-dropdown {\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  border: 1px solid rgba(0, 0, 0, 0.1);\n  background: rgba(0, 0, 0, 0.1);\n  position: relative;\n  width: 100px;\n  left: 0;\n  transform: translateX(100%);\n  transition: transform 0.2s linear; }\n\n.nk-override-tab .tab-content > .active.fade {\n  opacity: 1; }\n\n.nk-override-tab .nav-tabs {\n  border-bottom: none; }\n  .nk-override-tab .nav-tabs li {\n    margin: 0px 10px;\n    color: #fff;\n    padding: 3px 5px;\n    border-bottom: 2px solid transparent; }\n    .nk-override-tab .nav-tabs li.active {\n      border-bottom: 2px solid #fff; }\n      .nk-override-tab .nav-tabs li.active a {\n        color: #fff; }\n    .nk-override-tab .nav-tabs li a {\n      color: rgba(255, 255, 255, 0.7);\n      font-weight: bold; }\n      .nk-override-tab .nav-tabs li a:hover, .nk-override-tab .nav-tabs li a:focus, .nk-override-tab .nav-tabs li a:active {\n        text-decoration: none; }\n\n.loading-spinner {\n  text-align: center;\n  margin: 0 auto; }\n\n.header-fixed {\n  background-color: #292c2f;\n  box-shadow: 0 1px 1px #ccc;\n  padding: 20px 40px;\n  height: 80px;\n  color: #ffffff;\n  box-sizing: border-box;\n  top: -100px;\n  -webkit-transition: top 0.3s;\n  transition: top 0.3s; }\n\n.header-fixed .header-limiter {\n  max-width: 1200px;\n  text-align: center;\n  margin: 0 auto; }\n\n/*  The header placeholder. It is displayed when the header is fixed to the top of the\r\n    browser window, in order to prevent the content of the page from jumping up. */\n.header-fixed-placeholder {\n  height: 80px;\n  display: none; }\n\n/* Logo */\n.header-fixed .header-limiter h1 {\n  float: left;\n  font: normal 28px Cookie, Arial, Helvetica, sans-serif;\n  line-height: 40px;\n  margin: 0; }\n\n.header-fixed .header-limiter h1 span {\n  color: #5383d3; }\n\n/* The navigation links */\n.header-fixed .header-limiter a {\n  color: #ffffff;\n  text-decoration: none; }\n\n.header-fixed .header-limiter nav {\n  font: 16px Arial, Helvetica, sans-serif;\n  line-height: 40px;\n  float: right; }\n\n.header-fixed .header-limiter nav a {\n  display: inline-block;\n  padding: 0 5px;\n  text-decoration: none;\n  color: #ffffff;\n  opacity: 0.9; }\n\n.header-fixed .header-limiter nav a:hover {\n  opacity: 1; }\n\n.header-fixed .header-limiter nav a.selected {\n  color: #608bd2;\n  pointer-events: none;\n  opacity: 1; }\n\n/* Fixed version of the header */\nbody.fixed .header-fixed {\n  padding: 10px 40px;\n  height: 50px;\n  position: fixed;\n  width: 100%;\n  top: 0;\n  left: 0;\n  z-index: 1; }\n\nbody.fixed .header-fixed-placeholder {\n  display: block; }\n\nbody.fixed .header-fixed .header-limiter h1 {\n  font-size: 24px;\n  line-height: 30px; }\n\nbody.fixed .header-fixed .header-limiter nav {\n  line-height: 28px;\n  font-size: 13px; }\n\n/* Making the header responsive */\n@media all and (max-width: 600px) {\n  .header-fixed {\n    padding: 20px 0;\n    height: 75px; }\n  .header-fixed .header-limiter h1 {\n    float: none;\n    margin: -8px 0 10px;\n    text-align: center;\n    font-size: 24px;\n    line-height: 1; }\n  .header-fixed .header-limiter nav {\n    line-height: 1;\n    float: none; }\n  .header-fixed .header-limiter nav a {\n    font-size: 13px; }\n  body.fixed .header-fixed {\n    display: none; } }\n\n/*\r\n     We are clearing the body's margin and padding, so that the header fits properly.\r\n     We are also adding a height to demonstrate the scrolling behavior. You can remove\r\n     these styles.\r\n */\n.main-container {\n  max-width: 960px;\n  margin: 0 auto; }\n\n.login-body {\n  background: url(\"http://i.imgur.com/Eor57Ae.jpg\") no-repeat fixed center center;\n  background-size: cover;\n  font-family: Montserrat;\n  padding: 1px 0;\n  min-height: 100vh; }\n\n.logo {\n  width: 213px;\n  height: 36px;\n  background: url(\"http://i.imgur.com/fd8Lcso.png\") no-repeat;\n  margin: 30px auto; }\n\n.login-block {\n  width: 320px;\n  padding: 20px;\n  background: #fff;\n  border-radius: 5px;\n  border-top: 5px solid #ff656c;\n  margin: 0 auto; }\n\n.login-block h1 {\n  text-align: center;\n  color: #000;\n  font-size: 18px;\n  text-transform: uppercase;\n  margin-top: 0;\n  margin-bottom: 20px; }\n\n.login-block input {\n  width: 100%;\n  height: 42px;\n  box-sizing: border-box;\n  border-radius: 5px;\n  border: 1px solid #ccc;\n  margin-bottom: 20px;\n  font-size: 14px;\n  font-family: Montserrat;\n  padding: 0 20px 0 50px;\n  outline: none; }\n\n.login-block input#username {\n  background: #fff url(\"http://i.imgur.com/u0XmBmv.png\") 20px top no-repeat;\n  background-size: 16px 80px; }\n\n.login-block input#username:focus {\n  background: #fff url(\"http://i.imgur.com/u0XmBmv.png\") 20px bottom no-repeat;\n  background-size: 16px 80px; }\n\n.login-block input#password {\n  background: #fff url(\"http://i.imgur.com/Qf83FTt.png\") 20px top no-repeat;\n  background-size: 16px 80px; }\n\n.login-block input#password:focus {\n  background: #fff url(\"http://i.imgur.com/Qf83FTt.png\") 20px bottom no-repeat;\n  background-size: 16px 80px; }\n\n.login-block input:active, .login-block input:focus {\n  border: 1px solid #ff656c; }\n\n.login-block button {\n  width: 100%;\n  height: 40px;\n  background: #ff656c;\n  box-sizing: border-box;\n  border-radius: 5px;\n  border: 1px solid #e15960;\n  color: #fff;\n  font-weight: bold;\n  text-transform: uppercase;\n  font-size: 14px;\n  font-family: Montserrat;\n  outline: none;\n  cursor: pointer; }\n\n.login-block button:hover {\n  background: #ff7b81; }\n\nul.topic-list {\n  margin-bottom: 14px;\n  list-style: none; }\n  ul.topic-list li {\n    height: 30px;\n    margin: 0 0 7px 0;\n    position: relative; }\n  ul.topic-list li a {\n    display: block;\n    height: 30px;\n    margin: 0 0 7px 0;\n    background: #F7F5F2 url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAcCAYAAACQ0cTtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAcVJREFUSEvtVtFNxDAM7QiMwAiMwAiMwAhs4PZSic8bgRFuhI5wI3QERjjyYjuJrnaagoSExElRT4njZzvPLxmG/99vVIBofhrHcB6neYnjM46bfBfME4XnH8cBJwIA5zoAqKOaD+u3QSUTdjaGD6LTixU95rGeg4mZHsqybO6PNpV6ClcNrguQpjBylOFKRA9dm8QI9hVgO0OOjg/fA6LT/IqA8LXLWgCbZ6hkaBlVhFm8rIVYCNq2IXp/lKxcJ3DeAyZ2F/hDtTZB0TS/pUWnPLqhFyyxFP5iyTdgykBk2CKFBeadr1spdWIB1cy8B1MGOvtW89zaYKUVarCa6jYYK822jCxBN2eTyBKaVhqX7RMJGvugowYYC63JHpCm0sZaJ9N/i1ScdQrksmWjOAQrzWZ1AE22RQcaoOmvRBJWt1mzlMkNEAXYsy0C4bA709/JLjWrKnwDSHsMtm4bSXY41KiNRuer4DYaX/RVfLR7dshR7QDaIpyEPN3ke0qU99fs8whwDyZydwxInUiG8t4Iq/XWgLozSFzXq2lHW5tnKJepgOZ3yKbX+Omwc0Yt0a3XkKkAQzWSDKVLFPMHb/RezL9l9wWuQAy9JbrovAAAAABJRU5ErkJggg==) 97% center no-repeat;\n    font-size: 16px;\n    line-height: 1.2;\n    color: #333;\n    padding: 5px 0 0 20px;\n    text-decoration: none; }\n  ul.topic-list li a:hover {\n    background-color: #EFEFEF; }\n  ul.topic-list li.color-0 {\n    border-left: 5px maroon solid; }\n  ul.topic-list li.color-1 {\n    border-left: 5px #802000 solid; }\n  ul.topic-list li.color-2 {\n    border-left: 5px #804000 solid; }\n  ul.topic-list li.color-3 {\n    border-left: 5px #806000 solid; }\n  ul.topic-list li.color-4 {\n    border-left: 5px olive solid; }\n  ul.topic-list li.color-5 {\n    border-left: 5px #608000 solid; }\n  ul.topic-list li.color-6 {\n    border-left: 5px #408000 solid; }\n  ul.topic-list li.color-7 {\n    border-left: 5px #208000 solid; }\n  ul.topic-list li.color-8 {\n    border-left: 5px green solid; }\n  ul.topic-list li.color-9 {\n    border-left: 5px #008020 solid; }\n  ul.topic-list li.color-10 {\n    border-left: 5px solid #008040; }\n  ul.topic-list li.color-11 {\n    border-left: 5px solid #008060; }\n  ul.topic-list li.color-12 {\n    border-left: 5px solid teal; }\n  ul.topic-list li.color-13 {\n    border-left: 5px solid #006080; }\n  ul.topic-list li.color-14 {\n    border-left: 5px solid #004080; }\n  ul.topic-list li.color-15 {\n    border-left: 5px solid #002080; }\n  ul.topic-list li.color-16 {\n    border-left: 5px solid navy; }\n  ul.topic-list li.color-17 {\n    border-left: 5px solid #200080; }\n  ul.topic-list li.color-18 {\n    border-left: 5px solid #400080; }\n  ul.topic-list li.color-19 {\n    border-left: 5px solid #600080; }\n  ul.topic-list li.color-20 {\n    border-left: 5px solid purple; }\n  ul.topic-list li.color-21 {\n    border-left: 5px solid #800060; }\n  ul.topic-list li.color-22 {\n    border-left: 5px solid #800040; }\n  ul.topic-list li.color-23 {\n    border-left: 5px solid #800020; }\n  ul.topic-list li.color-24 {\n    border-left: 5px solid maroon; }\n\n.progressbar {\n  display: inline-block;\n  height: 100%;\n  width: 100%;\n  position: absolute;\n  left: 0;\n  top: 0; }\n  .progressbar svg {\n    height: 100% !important; }\n\n.table-form li {\n  list-style: none; }\n  .table-form li span {\n    display: inline-block;\n    padding: 10px; }\n    .table-form li span.left {\n      text-transform: capitalize;\n      min-width: 130px; }\n    .table-form li span.right {\n      min-width: 150px; }\n\n.load-more-btn {\n  margin: 20px auto;\n  width: 200px;\n  display: block;\n  padding: 5px;\n  cursor: pointer; }\n\n.input-search input {\n  width: 100%;\n  margin: 10px 0px 20px;\n  padding: 5px 10px;\n  color: #000;\n  border-radius: 1px; }\n", ""]);
 
 	// exports
 
@@ -24878,11 +24878,11 @@
 
 	var _Login2 = _interopRequireDefault(_Login);
 
-	var _Topics = __webpack_require__(268);
+	var _Topics = __webpack_require__(289);
 
 	var _Topics2 = _interopRequireDefault(_Topics);
 
-	var _Topic = __webpack_require__(279);
+	var _Topic = __webpack_require__(287);
 
 	var _Topic2 = _interopRequireDefault(_Topic);
 
@@ -24902,12 +24902,6 @@
 
 			return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
 		}
-
-		// toggleTheme(theme) {
-		// 	const newTheme = theme;
-		// 	localStorage ? localStorage.setItem('THEME_COLOR', theme) : '';
-		// 	this.props.dispatchThemeChange(newTheme)
-		// }
 
 		_createClass(App, [{
 			key: 'render',
@@ -28694,90 +28688,6 @@
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-					value: true
-	});
-
-	var _react = __webpack_require__(11);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _Layout = __webpack_require__(266);
-
-	var _Layout2 = _interopRequireDefault(_Layout);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var Login = function Login(props) {
-					return _react2.default.createElement(
-									'div',
-									{ className: 'login-body clearfix' },
-									_react2.default.createElement('link', { href: 'http://fonts.googleapis.com/css?family=Montserrat:400,700', rel: 'stylesheet', type: 'text/css' }),
-									_react2.default.createElement('div', { className: 'logo' }),
-									_react2.default.createElement(
-													'div',
-													{ className: 'login-block' },
-													_react2.default.createElement(
-																	'h1',
-																	null,
-																	'Login'
-													),
-													_react2.default.createElement('input', { type: 'text', value: '', placeholder: 'Username', id: 'username' }),
-													_react2.default.createElement('input', { type: 'password', value: '', placeholder: 'Password', id: 'password' }),
-													_react2.default.createElement(
-																	'button',
-																	null,
-																	'Submit'
-													)
-									)
-					);
-	};
-
-	exports.default = Login;
-
-/***/ }),
-/* 266 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-
-	var _react = __webpack_require__(11);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _reactRouterDom = __webpack_require__(228);
-
-	var _Header = __webpack_require__(267);
-
-	var _Header2 = _interopRequireDefault(_Header);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	var Layout = function Layout(props) {
-	    return _react2.default.createElement(
-	        'div',
-	        null,
-	        _react2.default.createElement(_Header2.default, null),
-	        _react2.default.createElement(
-	            'div',
-	            { className: 'main-container clearfix' },
-	            props.children
-	        )
-	    );
-	};
-
-	exports.default = Layout;
-
-/***/ }),
-/* 267 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
 		value: true
 	});
 
@@ -28787,144 +28697,23 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactRouterDom = __webpack_require__(228);
+	var _reactCookie = __webpack_require__(266);
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var Header = function (_React$Component) {
-		_inherits(Header, _React$Component);
-
-		function Header() {
-			_classCallCheck(this, Header);
-
-			return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
-		}
-
-		_createClass(Header, [{
-			key: 'componentWillMount',
-			value: function componentWillMount() {
-				console.log('in');
-				var showHeaderAt = 150;
-
-				var win = window;
-				var body = document.documentElement.getElementsByTagName('body')[0];
-				// Show the fixed header only on larger screen devices
-
-				if (win.outerWidth > 600) {
-
-					// When we scroll more than 150px down, we set the
-					// "fixed" class on the body element.
-					window.addEventListener('scroll', function () {
-						if (win.scrollY > showHeaderAt) {
-							body.classList.add('fixed');
-						} else {
-							body.classList.remove('fixed');
-						}
-					});
-				}
-			}
-		}, {
-			key: 'render',
-			value: function render() {
-				return _react2.default.createElement(
-					'header',
-					{ className: 'header-fixed' },
-					_react2.default.createElement(
-						'div',
-						{ className: 'header-limiter' },
-						_react2.default.createElement(
-							'h1',
-							null,
-							_react2.default.createElement(
-								_reactRouterDom.Link,
-								{ to: '/' },
-								'Company',
-								_react2.default.createElement(
-									'span',
-									null,
-									'logo'
-								)
-							)
-						),
-						_react2.default.createElement(
-							'nav',
-							null,
-							_react2.default.createElement(
-								_reactRouterDom.Link,
-								{ to: '/' },
-								'Home'
-							),
-							_react2.default.createElement(
-								_reactRouterDom.Link,
-								{ to: '/topics' },
-								'Topics'
-							),
-							_react2.default.createElement(
-								_reactRouterDom.Link,
-								{ to: '/about' },
-								'About'
-							),
-							_react2.default.createElement(
-								_reactRouterDom.Link,
-								{ to: '/faq' },
-								'Faq'
-							),
-							_react2.default.createElement(
-								_reactRouterDom.Link,
-								{ to: '/contact' },
-								'Contact'
-							),
-							_react2.default.createElement(
-								_reactRouterDom.Link,
-								{ to: '/logout' },
-								'Logout'
-							)
-						)
-					)
-				);
-			}
-		}]);
-
-		return Header;
-	}(_react2.default.Component);
-
-	exports.default = Header;
-
-/***/ }),
-/* 268 */
-/***/ (function(module, exports, __webpack_require__) {
-
-	'use strict';
-
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(11);
-
-	var _react2 = _interopRequireDefault(_react);
+	var _reactCookie2 = _interopRequireDefault(_reactCookie);
 
 	var _reactRouterDom = __webpack_require__(228);
 
-	var _reactProgressbar = __webpack_require__(269);
+	var _reactProgressbar = __webpack_require__(275);
 
-	var _Layout = __webpack_require__(266);
+	var _Layout = __webpack_require__(285);
 
 	var _Layout2 = _interopRequireDefault(_Layout);
 
-	var _Topic = __webpack_require__(279);
+	var _Topic = __webpack_require__(287);
 
 	var _Topic2 = _interopRequireDefault(_Topic);
 
-	var _constant = __webpack_require__(280);
+	var _constant = __webpack_require__(288);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -28938,19 +28727,19 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var Topics = function (_React$Component) {
-		_inherits(Topics, _React$Component);
+	var Login = function (_React$Component) {
+		_inherits(Login, _React$Component);
 
-		function Topics(props) {
-			_classCallCheck(this, Topics);
+		function Login(props) {
+			_classCallCheck(this, Login);
 
-			var _this = _possibleConstructorReturn(this, (Topics.__proto__ || Object.getPrototypeOf(Topics)).call(this, props));
+			var _this = _possibleConstructorReturn(this, (Login.__proto__ || Object.getPrototypeOf(Login)).call(this, props));
 
-			_this.state = { planetsTotal: '', pageCount: 1, totalPopulation: 20000, data: [] };
+			_this.state = { planetsTotal: '', pageCount: 1, totalPopulation: 20000, data: [], form: { name: '', password: '' } };
 			return _this;
 		}
 
-		_createClass(Topics, [{
+		_createClass(Login, [{
 			key: 'componentDidMount',
 			value: function () {
 				var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
@@ -28958,15 +28747,11 @@
 						while (1) {
 							switch (_context.prev = _context.next) {
 								case 0:
-									console.log('rr');
-									_context.next = 3;
-									return this.fetchPlanets();
+									if (_reactCookie2.default) {
+										// console.log(cookie.load('name'), cookie.load('password'));
+									}
 
-								case 3:
-									_context.next = 5;
-									return this.findMaxInArrar();
-
-								case 5:
+								case 1:
 								case 'end':
 									return _context.stop();
 							}
@@ -28981,26 +28766,40 @@
 				return componentDidMount;
 			}()
 		}, {
-			key: 'fetchPlanets',
+			key: 'onChangeUpdate',
+			value: function onChangeUpdate(event) {
+				this.state.form[event.target.name] = event.target.value;
+				this.setState({ form: this.state.form });
+			}
+		}, {
+			key: 'submitForm',
 			value: function () {
-				var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2(count) {
+				var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2() {
 					var _this2 = this;
 
 					return regeneratorRuntime.wrap(function _callee2$(_context2) {
 						while (1) {
 							switch (_context2.prev = _context2.next) {
 								case 0:
-									if (count) {
-										this.state.pageCount++;
-									}
+									console.log(this.state.form.name);
 									_context2.next = 3;
-									return fetch('https://swapi.co/api/planets/?page=' + this.state.pageCount).then(function (response) {
+									return fetch('https://swapi.co/api/people/?search=' + this.state.form.name).then(function (response) {
 										return response.json();
 									}).then(function (planets) {
-										_this2.setState({ planetsTotal: planets.count, data: [].concat(_toConsumableArray(_this2.state.data), _toConsumableArray(planets.results)) });
+										_this2.setState({ planetsTotal: planets.count, data: [].concat(_toConsumableArray(planets.results)) });
 									});
 
 								case 3:
+									this.state.data && this.state.data.map(function (item) {
+										if (item.name == _this2.state.form.name && item.birth_year == _this2.state.form.password) {
+											console.log('success login-----------');
+											// cookie.save('name', this.state.form.name, { path: '/' });
+											// cookie.save('password', this.state.form.password, { path: '/' });
+											_this2.props.history.push('/topics');
+										}
+									});
+
+								case 4:
 								case 'end':
 									return _context2.stop();
 							}
@@ -29008,113 +28807,795 @@
 					}, _callee2, this);
 				}));
 
-				function fetchPlanets(_x) {
+				function submitForm() {
 					return _ref2.apply(this, arguments);
 				}
 
-				return fetchPlanets;
+				return submitForm;
 			}()
-		}, {
-			key: 'getUrl',
-			value: function getUrl(str) {
-				if (str) {
-					var arr = str.split('/');
-					return arr[arr.length - 2];
-				}
-				return '/';
-			}
-		}, {
-			key: 'findMaxInArrar',
-			value: function findMaxInArrar() {
-				var max = 0;
-				for (var i = 0; i < this.state.data.length; i++) {
-					console.log(this.state.data[i].population);
-					if (this.state.data[i].population != 'unknown') {
-						max = Math.max(max, this.state.data[i].population);
-					}
-					console.log(max);
-				}
-				this.setState({ totalPopulation: max });
-			}
 		}, {
 			key: 'render',
 			value: function render() {
 				var _this3 = this;
 
-				if (!this.state.data.length > 0) {
-					return _react2.default.createElement(
-						_Layout2.default,
-						null,
-						_react2.default.createElement(
-							'div',
-							{ className: 'loading-spinner' },
-							_react2.default.createElement('img', { src: '/public/img/loader-old.gif' })
-						)
-					);
-				}
+				// if(!this.state.data.length > 0) {
+				// 	return (<Layout><div className="loading-spinner"><img src="/public/img/loader-old.gif" /></div></Layout>)
+				// }
+				console.log(this.state.data);
 				return _react2.default.createElement(
-					_Layout2.default,
-					null,
+					'div',
+					{ className: 'login-body clearfix' },
+					_react2.default.createElement('link', { href: 'http://fonts.googleapis.com/css?family=Montserrat:400,700', rel: 'stylesheet', type: 'text/css' }),
+					_react2.default.createElement('div', { className: 'logo' }),
 					_react2.default.createElement(
-						'h2',
-						null,
-						'Planets - ',
-						this.state.planetsTotal
-					),
-					_react2.default.createElement(
-						'ul',
-						{ className: 'topic-list' },
-						this.state.data && this.state.data.map(function (item, id) {
-							return _react2.default.createElement(
-								'li',
-								{ key: id, className: 'color-' + (0, _constant.randomColorWR)() },
-								_react2.default.createElement(
-									_reactRouterDom.Link,
-									{ to: '/topics/' + _this3.getUrl(item.url) },
-									item.name,
-									' - ',
-									item.population,
-									_react2.default.createElement(_reactProgressbar.Line, {
-										progress: item.population / _this3.state.totalPopulation
-										// text={randomColor()}
-										, options: {
-											strokeWidth: 2,
-											color: (0, _constant.randomColor)()
-										},
-										initialAnimate: true,
-										containerStyle: {
-											// width: '200px',
-											// height: '200px'
-											display: 'inline-block'
-										},
-										containerClassName: 'progressbar' })
-								)
-							);
-						}),
+						'div',
+						{ className: 'login-block' },
+						_react2.default.createElement(
+							'h1',
+							null,
+							'Login'
+						),
+						_react2.default.createElement('input', { type: 'text', name: 'name', placeholder: 'Username', id: 'username', onChange: function onChange(e) {
+								return _this3.onChangeUpdate(e);
+							} }),
+						_react2.default.createElement('input', { type: 'password', name: 'password', placeholder: 'Password', id: 'password', onChange: function onChange(e) {
+								return _this3.onChangeUpdate(e);
+							} }),
 						_react2.default.createElement(
 							'button',
-							{ className: 'btn btn-primary load-more-btn', onClick: function onClick() {
-									return _this3.fetchPlanets(true);
+							{ onClick: function onClick() {
+									return _this3.submitForm();
 								} },
-							'load More'
+							'Submit'
 						)
 					)
 				);
 			}
 		}]);
 
-		return Topics;
+		return Login;
 	}(_react2.default.Component);
 
-	exports.default = Topics;
+	exports.default = Login;
+
+/***/ }),
+/* 266 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _Cookies = __webpack_require__(267);
+
+	Object.defineProperty(exports, 'Cookies', {
+	  enumerable: true,
+	  get: function get() {
+	    return _interopRequireDefault(_Cookies).default;
+	  }
+	});
+
+	var _CookiesProvider = __webpack_require__(272);
+
+	Object.defineProperty(exports, 'CookiesProvider', {
+	  enumerable: true,
+	  get: function get() {
+	    return _interopRequireDefault(_CookiesProvider).default;
+	  }
+	});
+
+	var _withCookies = __webpack_require__(273);
+
+	Object.defineProperty(exports, 'withCookies', {
+	  enumerable: true,
+	  get: function get() {
+	    return _interopRequireDefault(_withCookies).default;
+	  }
+	});
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+
+/***/ }),
+/* 267 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _universalCookie = __webpack_require__(268);
+
+	var _universalCookie2 = _interopRequireDefault(_universalCookie);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+
+	exports.default = _universalCookie2.default;
+	module.exports = exports['default'];
+
+/***/ }),
+/* 268 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _Cookies = __webpack_require__(269);
+
+	var _Cookies2 = _interopRequireDefault(_Cookies);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+
+	exports.default = _Cookies2.default;
+	module.exports = exports['default'];
 
 /***/ }),
 /* 269 */
 /***/ (function(module, exports, __webpack_require__) {
 
+	'use strict';
+
+	var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _typeof = typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol" ? function (obj) {
+	  return typeof obj === "undefined" ? "undefined" : _typeof2(obj);
+	} : function (obj) {
+	  return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj === "undefined" ? "undefined" : _typeof2(obj);
+	};
+
+	var _createClass = function () {
+	  function defineProperties(target, props) {
+	    for (var i = 0; i < props.length; i++) {
+	      var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
+	    }
+	  }return function (Constructor, protoProps, staticProps) {
+	    if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
+	  };
+	}();
+
+	var _cookie = __webpack_require__(270);
+
+	var _cookie2 = _interopRequireDefault(_cookie);
+
+	var _objectAssign = __webpack_require__(13);
+
+	var _objectAssign2 = _interopRequireDefault(_objectAssign);
+
+	var _utils = __webpack_require__(271);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+
+	function _classCallCheck(instance, Constructor) {
+	  if (!(instance instanceof Constructor)) {
+	    throw new TypeError("Cannot call a class as a function");
+	  }
+	}
+
+	var Cookies = function () {
+	  function Cookies(cookies, hooks) {
+	    _classCallCheck(this, Cookies);
+
+	    this.cookies = parseCookies(cookies);
+	    this.hooks = hooks;
+	    this.HAS_DOCUMENT_COOKIE = (0, _utils.hasDocumentCookie)();
+	  }
+
+	  _createClass(Cookies, [{
+	    key: '_updateBrowserValues',
+	    value: function _updateBrowserValues() {
+	      if (!this.HAS_DOCUMENT_COOKIE) {
+	        return;
+	      }
+
+	      this.cookies = _cookie2.default.parse(document.cookie);
+	    }
+	  }, {
+	    key: 'get',
+	    value: function get(name) {
+	      var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+	      this._updateBrowserValues();
+	      return readCookie(this.cookies[name], options);
+	    }
+	  }, {
+	    key: 'getAll',
+	    value: function getAll() {
+	      var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+
+	      this._updateBrowserValues();
+	      var result = {};
+
+	      for (var name in this.cookies) {
+	        result[name] = readCookie(this.cookies[name], options);
+	      }
+
+	      return result;
+	    }
+	  }, {
+	    key: 'set',
+	    value: function set(name, value, options) {
+	      if ((typeof value === 'undefined' ? 'undefined' : _typeof(value)) === 'object') {
+	        value = JSON.stringify(value);
+	      }
+
+	      if (this.hooks && this.hooks.onSet) {
+	        this.hooks.onSet(name, value, options);
+	      }
+
+	      this.cookies[name] = value;
+
+	      if (this.HAS_DOCUMENT_COOKIE) {
+	        document.cookie = _cookie2.default.serialize(name, value, options);
+	      }
+	    }
+	  }, {
+	    key: 'remove',
+	    value: function remove(name, options) {
+	      var finalOptions = options = (0, _objectAssign2.default)({}, options, {
+	        expires: new Date(1970, 1, 1, 0, 0, 1),
+	        maxAge: 0
+	      });
+
+	      if (this.hooks && this.hooks.onRemove) {
+	        this.hooks.onRemove(name, finalOptions);
+	      }
+
+	      delete this.cookies[name];
+
+	      if (this.HAS_DOCUMENT_COOKIE) {
+	        document.cookie = _cookie2.default.serialize(name, '', finalOptions);
+	      }
+	    }
+	  }]);
+
+	  return Cookies;
+	}();
+
+	exports.default = Cookies;
+
+	function parseCookies(cookies) {
+	  if (typeof cookies === 'string') {
+	    return _cookie2.default.parse(cookies);
+	  } else if ((typeof cookies === 'undefined' ? 'undefined' : _typeof(cookies)) === 'object' && cookies !== null) {
+	    return cookies;
+	  } else {
+	    return {};
+	  }
+	}
+
+	function isParsingCookie(value, doNotParse) {
+	  if (typeof doNotParse === 'undefined') {
+	    // We guess if the cookie start with { or [, it has been serialized
+	    doNotParse = !value || value[0] !== '{' && value[0] !== '[' && value[0] !== '"';
+	  }
+
+	  return !doNotParse;
+	}
+
+	function readCookie(value) {
+	  var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+	  if (isParsingCookie(value, options.doNotParse)) {
+	    try {
+	      return JSON.parse(value);
+	    } catch (e) {
+	      // At least we tried
+	    }
+	  }
+
+	  return value;
+	}
+	module.exports = exports['default'];
+
+/***/ }),
+/* 270 */
+/***/ (function(module, exports) {
+
+	/*!
+	 * cookie
+	 * Copyright(c) 2012-2014 Roman Shtylman
+	 * Copyright(c) 2015 Douglas Christopher Wilson
+	 * MIT Licensed
+	 */
+
+	'use strict';
+
+	/**
+	 * Module exports.
+	 * @public
+	 */
+
+	exports.parse = parse;
+	exports.serialize = serialize;
+
+	/**
+	 * Module variables.
+	 * @private
+	 */
+
+	var decode = decodeURIComponent;
+	var encode = encodeURIComponent;
+	var pairSplitRegExp = /; */;
+
+	/**
+	 * RegExp to match field-content in RFC 7230 sec 3.2
+	 *
+	 * field-content = field-vchar [ 1*( SP / HTAB ) field-vchar ]
+	 * field-vchar   = VCHAR / obs-text
+	 * obs-text      = %x80-FF
+	 */
+
+	var fieldContentRegExp = /^[\u0009\u0020-\u007e\u0080-\u00ff]+$/;
+
+	/**
+	 * Parse a cookie header.
+	 *
+	 * Parse the given cookie header string into an object
+	 * The object has the various cookies as keys(names) => values
+	 *
+	 * @param {string} str
+	 * @param {object} [options]
+	 * @return {object}
+	 * @public
+	 */
+
+	function parse(str, options) {
+	  if (typeof str !== 'string') {
+	    throw new TypeError('argument str must be a string');
+	  }
+
+	  var obj = {};
+	  var opt = options || {};
+	  var pairs = str.split(pairSplitRegExp);
+	  var dec = opt.decode || decode;
+
+	  for (var i = 0; i < pairs.length; i++) {
+	    var pair = pairs[i];
+	    var eq_idx = pair.indexOf('=');
+
+	    // skip things that don't look like key=value
+	    if (eq_idx < 0) {
+	      continue;
+	    }
+
+	    var key = pair.substr(0, eq_idx).trim();
+	    var val = pair.substr(++eq_idx, pair.length).trim();
+
+	    // quoted values
+	    if ('"' == val[0]) {
+	      val = val.slice(1, -1);
+	    }
+
+	    // only assign once
+	    if (undefined == obj[key]) {
+	      obj[key] = tryDecode(val, dec);
+	    }
+	  }
+
+	  return obj;
+	}
+
+	/**
+	 * Serialize data into a cookie header.
+	 *
+	 * Serialize the a name value pair into a cookie string suitable for
+	 * http headers. An optional options object specified cookie parameters.
+	 *
+	 * serialize('foo', 'bar', { httpOnly: true })
+	 *   => "foo=bar; httpOnly"
+	 *
+	 * @param {string} name
+	 * @param {string} val
+	 * @param {object} [options]
+	 * @return {string}
+	 * @public
+	 */
+
+	function serialize(name, val, options) {
+	  var opt = options || {};
+	  var enc = opt.encode || encode;
+
+	  if (typeof enc !== 'function') {
+	    throw new TypeError('option encode is invalid');
+	  }
+
+	  if (!fieldContentRegExp.test(name)) {
+	    throw new TypeError('argument name is invalid');
+	  }
+
+	  var value = enc(val);
+
+	  if (value && !fieldContentRegExp.test(value)) {
+	    throw new TypeError('argument val is invalid');
+	  }
+
+	  var str = name + '=' + value;
+
+	  if (null != opt.maxAge) {
+	    var maxAge = opt.maxAge - 0;
+	    if (isNaN(maxAge)) throw new Error('maxAge should be a Number');
+	    str += '; Max-Age=' + Math.floor(maxAge);
+	  }
+
+	  if (opt.domain) {
+	    if (!fieldContentRegExp.test(opt.domain)) {
+	      throw new TypeError('option domain is invalid');
+	    }
+
+	    str += '; Domain=' + opt.domain;
+	  }
+
+	  if (opt.path) {
+	    if (!fieldContentRegExp.test(opt.path)) {
+	      throw new TypeError('option path is invalid');
+	    }
+
+	    str += '; Path=' + opt.path;
+	  }
+
+	  if (opt.expires) {
+	    if (typeof opt.expires.toUTCString !== 'function') {
+	      throw new TypeError('option expires is invalid');
+	    }
+
+	    str += '; Expires=' + opt.expires.toUTCString();
+	  }
+
+	  if (opt.httpOnly) {
+	    str += '; HttpOnly';
+	  }
+
+	  if (opt.secure) {
+	    str += '; Secure';
+	  }
+
+	  if (opt.sameSite) {
+	    var sameSite = typeof opt.sameSite === 'string' ? opt.sameSite.toLowerCase() : opt.sameSite;
+
+	    switch (sameSite) {
+	      case true:
+	        str += '; SameSite=Strict';
+	        break;
+	      case 'lax':
+	        str += '; SameSite=Lax';
+	        break;
+	      case 'strict':
+	        str += '; SameSite=Strict';
+	        break;
+	      default:
+	        throw new TypeError('option sameSite is invalid');
+	    }
+	  }
+
+	  return str;
+	}
+
+	/**
+	 * Try decoding a string using a decoding function.
+	 *
+	 * @param {string} str
+	 * @param {function} decode
+	 * @private
+	 */
+
+	function tryDecode(str, decode) {
+	  try {
+	    return decode(str);
+	  } catch (e) {
+	    return str;
+	  }
+	}
+
+/***/ }),
+/* 271 */
+/***/ (function(module, exports) {
+
+	'use strict';
+
+	var _typeof2 = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _typeof = typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol" ? function (obj) {
+	  return typeof obj === "undefined" ? "undefined" : _typeof2(obj);
+	} : function (obj) {
+	  return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj === "undefined" ? "undefined" : _typeof2(obj);
+	};
+
+	exports.hasDocumentCookie = hasDocumentCookie;
+	exports.cleanCookies = cleanCookies;
+	// Can we get/set cookies on document.cookie?
+
+	function hasDocumentCookie() {
+	  return (typeof document === 'undefined' ? 'undefined' : _typeof(document)) === 'object' && typeof document.cookie === 'string';
+	}
+
+	//backwards compatibility
+	var HAS_DOCUMENT_COOKIE = exports.HAS_DOCUMENT_COOKIE = hasDocumentCookie();
+
+	function cleanCookies() {
+	  document.cookie.split(';').forEach(function (c) {
+	    document.cookie = c.replace(/^ +/, '').replace(/=.*/, '=;expires=' + new Date().toUTCString() + ';path=/');
+	  });
+	}
+
+/***/ }),
+/* 272 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () {
+	  function defineProperties(target, props) {
+	    for (var i = 0; i < props.length; i++) {
+	      var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);
+	    }
+	  }return function (Constructor, protoProps, staticProps) {
+	    if (protoProps) defineProperties(Constructor.prototype, protoProps);if (staticProps) defineProperties(Constructor, staticProps);return Constructor;
+	  };
+	}();
+
+	var _react = __webpack_require__(11);
+
+	var _propTypes = __webpack_require__(195);
+
+	var _universalCookie = __webpack_require__(268);
+
+	var _universalCookie2 = _interopRequireDefault(_universalCookie);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+
+	function _classCallCheck(instance, Constructor) {
+	  if (!(instance instanceof Constructor)) {
+	    throw new TypeError("Cannot call a class as a function");
+	  }
+	}
+
+	function _possibleConstructorReturn(self, call) {
+	  if (!self) {
+	    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+	  }return call && ((typeof call === "undefined" ? "undefined" : _typeof(call)) === "object" || typeof call === "function") ? call : self;
+	}
+
+	function _inherits(subClass, superClass) {
+	  if (typeof superClass !== "function" && superClass !== null) {
+	    throw new TypeError("Super expression must either be null or a function, not " + (typeof superClass === "undefined" ? "undefined" : _typeof(superClass)));
+	  }subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } });if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+	}
+
+	var CookiesProvider = function (_Component) {
+	  _inherits(CookiesProvider, _Component);
+
+	  function CookiesProvider(props) {
+	    _classCallCheck(this, CookiesProvider);
+
+	    var _this = _possibleConstructorReturn(this, (CookiesProvider.__proto__ || Object.getPrototypeOf(CookiesProvider)).call(this, props));
+
+	    if (props.cookies) {
+	      _this.cookies = props.cookies;
+	    } else {
+	      _this.cookies = new _universalCookie2.default();
+	    }
+	    return _this;
+	  }
+
+	  _createClass(CookiesProvider, [{
+	    key: 'getChildContext',
+	    value: function getChildContext() {
+	      return {
+	        cookies: this.cookies
+	      };
+	    }
+	  }, {
+	    key: 'render',
+	    value: function render() {
+	      return this.props.children;
+	    }
+	  }]);
+
+	  return CookiesProvider;
+	}(_react.Component);
+
+	CookiesProvider.propTypes = {
+	  children: _propTypes.node,
+	  cookies: (0, _propTypes.instanceOf)(_universalCookie2.default)
+	};
+	CookiesProvider.childContextTypes = {
+	  cookies: (0, _propTypes.instanceOf)(_universalCookie2.default).isRequired
+	};
+	exports.default = CookiesProvider;
+	module.exports = exports['default'];
+
+/***/ }),
+/* 273 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _extends = Object.assign || function (target) {
+	  for (var i = 1; i < arguments.length; i++) {
+	    var source = arguments[i];for (var key in source) {
+	      if (Object.prototype.hasOwnProperty.call(source, key)) {
+	        target[key] = source[key];
+	      }
+	    }
+	  }return target;
+	};
+
+	exports.default = withCookies;
+
+	var _react = __webpack_require__(11);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _propTypes = __webpack_require__(195);
+
+	var _universalCookie = __webpack_require__(268);
+
+	var _universalCookie2 = _interopRequireDefault(_universalCookie);
+
+	var _hoistNonReactStatics = __webpack_require__(274);
+
+	var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
+
+	function _interopRequireDefault(obj) {
+	  return obj && obj.__esModule ? obj : { default: obj };
+	}
+
+	function _objectWithoutProperties(obj, keys) {
+	  var target = {};for (var i in obj) {
+	    if (keys.indexOf(i) >= 0) continue;if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;target[i] = obj[i];
+	  }return target;
+	}
+
+	function withCookies(Component) {
+	  function Wrapper(props, _ref) {
+	    var cookies = _ref.cookies;
+
+	    var wrappedComponentRef = props.wrappedComponentRef,
+	        remainingProps = _objectWithoutProperties(props, ['wrappedComponentRef']);
+
+	    return _react2.default.createElement(Component, _extends({}, remainingProps, {
+	      cookies: cookies,
+	      ref: wrappedComponentRef
+	    }));
+	  }
+
+	  Wrapper.displayName = 'withCookies(' + (Component.displayName || Component.name) + ')';
+	  Wrapper.WrappedComponent = Component;
+
+	  Wrapper.propTypes = {
+	    wrappedComponentRef: _propTypes.func
+	  };
+
+	  Wrapper.contextTypes = {
+	    cookies: (0, _propTypes.instanceOf)(_universalCookie2.default).isRequired
+	  };
+
+	  return (0, _hoistNonReactStatics2.default)(Wrapper, Component);
+	}
+	module.exports = exports['default'];
+
+/***/ }),
+/* 274 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;'use strict';
+
+	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+	/**
+	 * Copyright 2015, Yahoo! Inc.
+	 * Copyrights licensed under the New BSD License. See the accompanying LICENSE file for terms.
+	 */
+	(function (global, factory) {
+	    ( false ? 'undefined' : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? module.exports = factory() :  true ? !(__WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : global.hoistNonReactStatics = factory();
+	})(undefined, function () {
+	    'use strict';
+
+	    var REACT_STATICS = {
+	        childContextTypes: true,
+	        contextTypes: true,
+	        defaultProps: true,
+	        displayName: true,
+	        getDefaultProps: true,
+	        getDerivedStateFromProps: true,
+	        mixins: true,
+	        propTypes: true,
+	        type: true
+	    };
+
+	    var KNOWN_STATICS = {
+	        name: true,
+	        length: true,
+	        prototype: true,
+	        caller: true,
+	        callee: true,
+	        arguments: true,
+	        arity: true
+	    };
+
+	    var defineProperty = Object.defineProperty;
+	    var getOwnPropertyNames = Object.getOwnPropertyNames;
+	    var getOwnPropertySymbols = Object.getOwnPropertySymbols;
+	    var getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
+	    var getPrototypeOf = Object.getPrototypeOf;
+	    var objectPrototype = getPrototypeOf && getPrototypeOf(Object);
+
+	    return function hoistNonReactStatics(targetComponent, sourceComponent, blacklist) {
+	        if (typeof sourceComponent !== 'string') {
+	            // don't hoist over string (html) components
+
+	            if (objectPrototype) {
+	                var inheritedComponent = getPrototypeOf(sourceComponent);
+	                if (inheritedComponent && inheritedComponent !== objectPrototype) {
+	                    hoistNonReactStatics(targetComponent, inheritedComponent, blacklist);
+	                }
+	            }
+
+	            var keys = getOwnPropertyNames(sourceComponent);
+
+	            if (getOwnPropertySymbols) {
+	                keys = keys.concat(getOwnPropertySymbols(sourceComponent));
+	            }
+
+	            for (var i = 0; i < keys.length; ++i) {
+	                var key = keys[i];
+	                if (!REACT_STATICS[key] && !KNOWN_STATICS[key] && (!blacklist || !blacklist[key])) {
+	                    var descriptor = getOwnPropertyDescriptor(sourceComponent, key);
+	                    try {
+	                        // Avoid failures from read-only properties
+	                        defineProperty(targetComponent, key, descriptor);
+	                    } catch (e) {}
+	                }
+	            }
+
+	            return targetComponent;
+	        }
+
+	        return targetComponent;
+	    };
+	});
+
+/***/ }),
+/* 275 */
+/***/ (function(module, exports, __webpack_require__) {
+
 	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
 	    if (true) {
-	        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [module, exports, __webpack_require__(11), __webpack_require__(46), __webpack_require__(278), __webpack_require__(270)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [module, exports, __webpack_require__(11), __webpack_require__(46), __webpack_require__(284), __webpack_require__(276)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 	    } else if (typeof exports !== "undefined") {
 	        factory(module, exports, require('react'), require('react-dom'), require('lodash.isequal'), require('progressbar.js'));
 	    } else {
@@ -29129,7 +29610,7 @@
 
 	    (function (global, factory) {
 	        if (true) {
-	            !(__WEBPACK_AMD_DEFINE_ARRAY__ = [module, __webpack_require__(11), __webpack_require__(46), __webpack_require__(278), __webpack_require__(270)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	            !(__WEBPACK_AMD_DEFINE_ARRAY__ = [module, __webpack_require__(11), __webpack_require__(46), __webpack_require__(284), __webpack_require__(276)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 	        } else if (typeof exports !== "undefined") {
 	            factory(module);
 	        } else {
@@ -29278,39 +29759,39 @@
 	});
 
 /***/ }),
-/* 270 */
+/* 276 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	module.exports = {
 	    // Higher level API, different shaped progress bars
-	    Line: __webpack_require__(271),
-	    Circle: __webpack_require__(276),
-	    SemiCircle: __webpack_require__(277),
+	    Line: __webpack_require__(277),
+	    Circle: __webpack_require__(282),
+	    SemiCircle: __webpack_require__(283),
 
 	    // Lower level API to use any SVG path
-	    Path: __webpack_require__(273),
+	    Path: __webpack_require__(279),
 
 	    // Base-class for creating new custom shapes
 	    // to be in line with the API of built-in shapes
 	    // Undocumented.
-	    Shape: __webpack_require__(272),
+	    Shape: __webpack_require__(278),
 
 	    // Internal utils, undocumented.
-	    utils: __webpack_require__(275)
+	    utils: __webpack_require__(281)
 	};
 
 /***/ }),
-/* 271 */
+/* 277 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	// Line shaped progress bar
 
-	var Shape = __webpack_require__(272);
-	var utils = __webpack_require__(275);
+	var Shape = __webpack_require__(278);
+	var utils = __webpack_require__(281);
 
 	var Line = function Line(container, options) {
 	    this._pathTemplate = 'M 0,{center} L 100,{center}';
@@ -29338,15 +29819,15 @@
 	module.exports = Line;
 
 /***/ }),
-/* 272 */
+/* 278 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	// Base object for different progress bar shapes
 
-	var Path = __webpack_require__(273);
-	var utils = __webpack_require__(275);
+	var Path = __webpack_require__(279);
+	var utils = __webpack_require__(281);
 
 	var DESTROYED_ERROR = 'Object is destroyed';
 
@@ -29651,15 +30132,15 @@
 	module.exports = Shape;
 
 /***/ }),
-/* 273 */
+/* 279 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	// Lower level API to animate any kind of svg path
 
-	var Tweenable = __webpack_require__(274);
-	var utils = __webpack_require__(275);
+	var Tweenable = __webpack_require__(280);
+	var utils = __webpack_require__(281);
 
 	var EASING_ALIASES = {
 	    easeIn: 'easeInCubic',
@@ -29830,7 +30311,7 @@
 	module.exports = Path;
 
 /***/ }),
-/* 274 */
+/* 280 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_RESULT__;'use strict';
@@ -31434,7 +31915,7 @@
 	}).call(null);
 
 /***/ }),
-/* 275 */
+/* 281 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -31580,15 +32061,15 @@
 	};
 
 /***/ }),
-/* 276 */
+/* 282 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	// Circle shaped progress bar
 
-	var Shape = __webpack_require__(272);
-	var utils = __webpack_require__(275);
+	var Shape = __webpack_require__(278);
+	var utils = __webpack_require__(281);
 
 	var Circle = function Circle(container, options) {
 	    // Use two arcs to form a circle
@@ -31624,16 +32105,16 @@
 	module.exports = Circle;
 
 /***/ }),
-/* 277 */
+/* 283 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 	// Semi-SemiCircle shaped progress bar
 
-	var Shape = __webpack_require__(272);
-	var Circle = __webpack_require__(276);
-	var utils = __webpack_require__(275);
+	var Shape = __webpack_require__(278);
+	var Circle = __webpack_require__(282);
+	var utils = __webpack_require__(281);
 
 	var SemiCircle = function SemiCircle(container, options) {
 	    // Use one arc to form a SemiCircle
@@ -31673,7 +32154,7 @@
 	module.exports = SemiCircle;
 
 /***/ }),
-/* 278 */
+/* 284 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global, module) {'use strict';
@@ -33489,7 +33970,44 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(2)(module)))
 
 /***/ }),
-/* 279 */
+/* 285 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _react = __webpack_require__(11);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouterDom = __webpack_require__(228);
+
+	var _Header = __webpack_require__(286);
+
+	var _Header2 = _interopRequireDefault(_Header);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var Layout = function Layout(props) {
+	    return _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(_Header2.default, null),
+	        _react2.default.createElement(
+	            'div',
+	            { className: 'main-container clearfix' },
+	            props.children
+	        )
+	    );
+	};
+
+	exports.default = Layout;
+
+/***/ }),
+/* 286 */
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -33506,7 +34024,132 @@
 
 	var _reactRouterDom = __webpack_require__(228);
 
-	var _Layout = __webpack_require__(266);
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Header = function (_React$Component) {
+		_inherits(Header, _React$Component);
+
+		function Header() {
+			_classCallCheck(this, Header);
+
+			return _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).apply(this, arguments));
+		}
+
+		_createClass(Header, [{
+			key: 'componentWillMount',
+			value: function componentWillMount() {
+				console.log('in');
+				var showHeaderAt = 150;
+
+				var win = window;
+				var body = document.documentElement.getElementsByTagName('body')[0];
+				// Show the fixed header only on larger screen devices
+
+				if (win.outerWidth > 600) {
+
+					// When we scroll more than 150px down, we set the
+					// "fixed" class on the body element.
+					window.addEventListener('scroll', function () {
+						if (win.scrollY > showHeaderAt) {
+							body.classList.add('fixed');
+						} else {
+							body.classList.remove('fixed');
+						}
+					});
+				}
+			}
+		}, {
+			key: 'render',
+			value: function render() {
+				return _react2.default.createElement(
+					'header',
+					{ className: 'header-fixed' },
+					_react2.default.createElement(
+						'div',
+						{ className: 'header-limiter' },
+						_react2.default.createElement(
+							'h1',
+							null,
+							_react2.default.createElement(
+								_reactRouterDom.Link,
+								{ to: '/' },
+								'Company',
+								_react2.default.createElement(
+									'span',
+									null,
+									'logo'
+								)
+							)
+						),
+						_react2.default.createElement(
+							'nav',
+							null,
+							_react2.default.createElement(
+								_reactRouterDom.Link,
+								{ to: '/' },
+								'Home'
+							),
+							_react2.default.createElement(
+								_reactRouterDom.Link,
+								{ to: '/topics' },
+								'Topics'
+							),
+							_react2.default.createElement(
+								_reactRouterDom.Link,
+								{ to: '/about' },
+								'About'
+							),
+							_react2.default.createElement(
+								_reactRouterDom.Link,
+								{ to: '/faq' },
+								'Faq'
+							),
+							_react2.default.createElement(
+								_reactRouterDom.Link,
+								{ to: '/contact' },
+								'Contact'
+							),
+							_react2.default.createElement(
+								_reactRouterDom.Link,
+								{ to: '/logout' },
+								'Logout'
+							)
+						)
+					)
+				);
+			}
+		}]);
+
+		return Header;
+	}(_react2.default.Component);
+
+	exports.default = Header;
+
+/***/ }),
+/* 287 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(11);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouterDom = __webpack_require__(228);
+
+	var _Layout = __webpack_require__(285);
 
 	var _Layout2 = _interopRequireDefault(_Layout);
 
@@ -33795,7 +34438,7 @@
 	exports.default = Topic;
 
 /***/ }),
-/* 280 */
+/* 288 */
 /***/ (function(module, exports) {
 
 	'use strict';
@@ -33819,6 +34462,234 @@
 	function randomColorWR() {
 		return Math.floor(Math.random() * Math.floor(25));
 	}
+
+/***/ }),
+/* 289 */
+/***/ (function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(11);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactRouterDom = __webpack_require__(228);
+
+	var _reactProgressbar = __webpack_require__(275);
+
+	var _Layout = __webpack_require__(285);
+
+	var _Layout2 = _interopRequireDefault(_Layout);
+
+	var _Topic = __webpack_require__(287);
+
+	var _Topic2 = _interopRequireDefault(_Topic);
+
+	var _constant = __webpack_require__(288);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
+
+	function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Topics = function (_React$Component) {
+		_inherits(Topics, _React$Component);
+
+		function Topics(props) {
+			_classCallCheck(this, Topics);
+
+			var _this = _possibleConstructorReturn(this, (Topics.__proto__ || Object.getPrototypeOf(Topics)).call(this, props));
+
+			_this.state = { planetsTotal: '', pageCount: 1, totalPopulation: 20000, data: [] };
+			return _this;
+		}
+
+		_createClass(Topics, [{
+			key: 'componentDidMount',
+			value: function () {
+				var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
+					return regeneratorRuntime.wrap(function _callee$(_context) {
+						while (1) {
+							switch (_context.prev = _context.next) {
+								case 0:
+									console.log('rr');
+									_context.next = 3;
+									return this.fetchPlanets();
+
+								case 3:
+									_context.next = 5;
+									return this.findMaxInArrar();
+
+								case 5:
+								case 'end':
+									return _context.stop();
+							}
+						}
+					}, _callee, this);
+				}));
+
+				function componentDidMount() {
+					return _ref.apply(this, arguments);
+				}
+
+				return componentDidMount;
+			}()
+		}, {
+			key: 'fetchPlanets',
+			value: function () {
+				var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2(e, count) {
+					var _this2 = this;
+
+					var searchStr;
+					return regeneratorRuntime.wrap(function _callee2$(_context2) {
+						while (1) {
+							switch (_context2.prev = _context2.next) {
+								case 0:
+									if (count) {
+										this.state.pageCount++;
+									}
+									searchStr = e && e.target.value ? e.target.value : '';
+									_context2.next = 4;
+									return fetch('https://swapi.co/api/planets/?search=' + searchStr + '&page=' + this.state.pageCount).then(function (response) {
+										return response.json();
+									}).then(function (planets) {
+										!searchStr ? _this2.setState({ planetsTotal: planets.count, data: [].concat(_toConsumableArray(_this2.state.data), _toConsumableArray(planets.results)) }) : _this2.setState({ planetsTotal: planets.count, data: [].concat(_toConsumableArray(planets.results)) });
+									});
+
+								case 4:
+								case 'end':
+									return _context2.stop();
+							}
+						}
+					}, _callee2, this);
+				}));
+
+				function fetchPlanets(_x, _x2) {
+					return _ref2.apply(this, arguments);
+				}
+
+				return fetchPlanets;
+			}()
+			// async search(e, count) {
+			// 	if(count) {
+			// 		this.state.pageCount++;  
+			// 	}
+			// 	await fetch(`https://swapi.co/api/planets/?search=${e.target.value}&page=${this.state.pageCount}`)
+			// 	.then(response => response.json())
+			// 	.then(planets => {this.setState({ planetsTotal: planets.count, data: [...planets.results] })});
+			// }
+
+		}, {
+			key: 'getUrl',
+			value: function getUrl(str) {
+				if (str) {
+					var arr = str.split('/');
+					return arr[arr.length - 2];
+				}
+				return '/';
+			}
+		}, {
+			key: 'findMaxInArrar',
+			value: function findMaxInArrar() {
+				var max = 0;
+				for (var i = 0; i < this.state.data.length; i++) {
+					if (this.state.data[i].population != 'unknown') {
+						max = Math.max(max, this.state.data[i].population);
+					}
+				}
+				this.setState({ totalPopulation: max });
+			}
+		}, {
+			key: 'render',
+			value: function render() {
+				var _this3 = this;
+
+				if (!this.state.data.length > 0) {
+					return _react2.default.createElement(
+						_Layout2.default,
+						null,
+						_react2.default.createElement(
+							'div',
+							{ className: 'loading-spinner' },
+							_react2.default.createElement('img', { src: '/public/img/loader-old.gif' })
+						)
+					);
+				}
+				return _react2.default.createElement(
+					_Layout2.default,
+					null,
+					_react2.default.createElement(
+						'h2',
+						null,
+						'Planets - ',
+						this.state.planetsTotal
+					),
+					_react2.default.createElement(
+						'div',
+						{ className: 'input-search' },
+						_react2.default.createElement('input', { type: 'text', placeholder: 'Search by name here...', onChange: function onChange(e) {
+								return _this3.fetchPlanets(e);
+							} })
+					),
+					_react2.default.createElement(
+						'ul',
+						{ className: 'topic-list' },
+						this.state.data && this.state.data.map(function (item, id) {
+							return _react2.default.createElement(
+								'li',
+								{ key: id, className: 'color-' + (0, _constant.randomColorWR)() },
+								_react2.default.createElement(
+									_reactRouterDom.Link,
+									{ to: '/topics/' + _this3.getUrl(item.url) },
+									item.name,
+									' - ',
+									item.population,
+									_react2.default.createElement(_reactProgressbar.Line, {
+										progress: item.population / _this3.state.totalPopulation
+										// text={randomColor()}
+										, options: {
+											strokeWidth: 2,
+											color: (0, _constant.randomColor)()
+										},
+										initialAnimate: true,
+										containerStyle: {
+											// width: '200px',
+											// height: '200px'
+											display: 'inline-block'
+										},
+										containerClassName: 'progressbar' })
+								)
+							);
+						}),
+						_react2.default.createElement(
+							'button',
+							{ className: 'btn btn-primary load-more-btn', onClick: function onClick() {
+									return _this3.fetchPlanets(null, true);
+								} },
+							'load More'
+						)
+					)
+				);
+			}
+		}]);
+
+		return Topics;
+	}(_react2.default.Component);
+
+	exports.default = Topics;
 
 /***/ })
 /******/ ]);
