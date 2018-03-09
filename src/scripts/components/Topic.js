@@ -42,10 +42,18 @@ class Topic extends React.Component {
     return (
        <Layout>
           <h2>Planet - {this.state.planet.name}</h2>
-              <ul>
-              	{this.state.planet && this.state.planet.map((item) => (
-              		<li><span className="left">{item.key}</span><span>:</span><span className="right">{item.value}</span></li>
-              	))}
+              <ul className="table-form">
+          		<li><span className="left">{'name'}</span><span>:</span><span className="right">{this.state.planet.name}</span></li>
+          		<li><span className="left">{'rotation_period'}</span><span>:</span><span className="right">{this.state.planet.rotation_period}</span></li>
+          		<li><span className="left">{'orbital_period'}</span><span>:</span><span className="right">{this.state.planet.orbital_period}</span></li>
+          		<li><span className="left">{'diameter'}</span><span>:</span><span className="right">{this.state.planet.diameter}</span></li>
+          		<li><span className="left">{'climate'}</span><span>:</span><span className="right">{this.state.planet.climate}</span></li>
+          		<li><span className="left">{'gravity'}</span><span>:</span><span className="right">{this.state.planet.gravity}</span></li>
+          		<li><span className="left">{'terrain'}</span><span>:</span><span className="right">{this.state.planet.terrain}</span></li>
+          		<li><span className="left">{'surface_water'}</span><span>:</span><span className="right">{this.state.planet.surface_water}</span></li>
+          		<li><span className="left">{'population'}</span><span>:</span><span className="right">{this.state.planet.population}</span></li>
+          		<li><span className="left">{'created'}</span><span>:</span><span className="right">{this.state.planet.created}</span></li>
+          		<li><span className="left">{'edited'}</span><span>:</span><span className="right">{this.state.planet.edited}</span></li>
               </ul>
         </Layout>
       )

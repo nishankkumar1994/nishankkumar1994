@@ -137,3 +137,21 @@ ul.topic-list {
         height: 100% !important;
     }
 }
+.table-form {
+    // display: table;
+    li {
+        list-style: none;
+        span {
+            display: inline-block;
+            padding: 10px;
+            // display: table-column;
+            &.left {
+                text-transform: capitalize;
+                min-width: 130px;               
+            }
+            &.right {
+                min-width: 150px;               
+            }
+        }
+    }
+}

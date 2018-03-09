@@ -464,7 +464,7 @@
 
 
 	// module
-	exports.push([module.id, "* {\n  margin: 0;\n  padding: 0; }\n\n.light, .dark {\n  background: linear-gradient(45deg, rgba(12, 147, 207, 0.93) 0, rgba(0, 169, 128, 0.93) 97%);\n  color: white; }\n\n.light1 {\n  background: linear-gradient(45deg, #93a5cf 0, #e4efe9 97%);\n  color: white; }\n\n.light2 {\n  background: linear-gradient(45deg, #B7F8DB 0, #50A7C2 97%);\n  color: white; }\n\n.light3 {\n  background: linear-gradient(45deg, #ffafbd 0, #ffc3a0 97%);\n  color: white; }\n\n.light4 {\n  background: linear-gradient(45deg, #cc2b5e 0, #753a88 97%);\n  color: white; }\n\n.light5 {\n  background: linear-gradient(45deg, #36d1dc 0, #5b86e5 97%);\n  color: white; }\n\nbutton.btn-c {\n  font-size: 15px;\n  background: transparent;\n  color: #fff;\n  padding: 0px 20px;\n  box-sizing: border-box;\n  border: none;\n  cursor: pointer;\n  text-align: right;\n  width: 100%; }\n\n.bottom-fixed {\n  position: fixed;\n  top: 0;\n  right: 0; }\n  .bottom-fixed > span {\n    padding: 5px 10px;\n    display: block; }\n  .bottom-fixed:hover .list-dropdown {\n    transform: translateX(0%); }\n  .bottom-fixed img {\n    width: 60px; }\n\n.card-main-wrap {\n  max-width: 740px;\n  margin: 0 auto;\n  padding: 40px 0; }\n\n.card-wrap {\n  padding: 40px;\n  margin: 20px 0;\n  background: rgba(0, 0, 0, 0.2);\n  position: relative;\n  box-shadow: 0 0 16px 0px rgba(255, 255, 255, 0.5); }\n  .card-wrap .card-que span {\n    position: absolute;\n    width: 40px;\n    background: rgba(255, 255, 255, 0.2);\n    border-radius: 50%;\n    box-sizing: border-box;\n    height: 40px;\n    text-align: center;\n    padding: 8px 0;\n    left: -50px;\n    top: calc(50% - 20px);\n    font-style: normal; }\n  .card-wrap .card-que {\n    font-size: 16px;\n    font-style: italic;\n    margin-bottom: 10px;\n    color: rgba(255, 255, 255, 0.8); }\n  .card-wrap .card-label {\n    float: left;\n    font-size: 14px; }\n  .card-wrap .card-author {\n    position: absolute;\n    background: rgba(0, 0, 0, 0.2);\n    box-sizing: border-box;\n    height: 26px;\n    padding: 0px 10px;\n    right: 0;\n    bottom: 0;\n    font-style: normal;\n    width: 100%;\n    text-align: right;\n    font-size: 14px; }\n    .card-wrap .card-author .card-author-label {\n      font-style: italic; }\n  .card-wrap .card-author-wrap {\n    float: right; }\n\n.social-wrap {\n  text-align: center; }\n  .social-wrap > div {\n    display: inline-block;\n    margin: 10px;\n    cursor: pointer; }\n    .social-wrap > div:hover {\n      transform: scale(1.2);\n      transition: transform 0.2s linear; }\n\n.list-dropdown {\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  border: 1px solid rgba(0, 0, 0, 0.1);\n  background: rgba(0, 0, 0, 0.1);\n  position: relative;\n  width: 100px;\n  left: 0;\n  transform: translateX(100%);\n  transition: transform 0.2s linear; }\n\n.nk-override-tab .tab-content > .active.fade {\n  opacity: 1; }\n\n.nk-override-tab .nav-tabs {\n  border-bottom: none; }\n  .nk-override-tab .nav-tabs li {\n    margin: 0px 10px;\n    color: #fff;\n    padding: 3px 5px;\n    border-bottom: 2px solid transparent; }\n    .nk-override-tab .nav-tabs li.active {\n      border-bottom: 2px solid #fff; }\n      .nk-override-tab .nav-tabs li.active a {\n        color: #fff; }\n    .nk-override-tab .nav-tabs li a {\n      color: rgba(255, 255, 255, 0.7);\n      font-weight: bold; }\n      .nk-override-tab .nav-tabs li a:hover, .nk-override-tab .nav-tabs li a:focus, .nk-override-tab .nav-tabs li a:active {\n        text-decoration: none; }\n\n.loading-spinner {\n  text-align: center;\n  margin: 0 auto; }\n\n.header-fixed {\n  background-color: #292c2f;\n  box-shadow: 0 1px 1px #ccc;\n  padding: 20px 40px;\n  height: 80px;\n  color: #ffffff;\n  box-sizing: border-box;\n  top: -100px;\n  -webkit-transition: top 0.3s;\n  transition: top 0.3s; }\n\n.header-fixed .header-limiter {\n  max-width: 1200px;\n  text-align: center;\n  margin: 0 auto; }\n\n/*  The header placeholder. It is displayed when the header is fixed to the top of the\r\n    browser window, in order to prevent the content of the page from jumping up. */\n.header-fixed-placeholder {\n  height: 80px;\n  display: none; }\n\n/* Logo */\n.header-fixed .header-limiter h1 {\n  float: left;\n  font: normal 28px Cookie, Arial, Helvetica, sans-serif;\n  line-height: 40px;\n  margin: 0; }\n\n.header-fixed .header-limiter h1 span {\n  color: #5383d3; }\n\n/* The navigation links */\n.header-fixed .header-limiter a {\n  color: #ffffff;\n  text-decoration: none; }\n\n.header-fixed .header-limiter nav {\n  font: 16px Arial, Helvetica, sans-serif;\n  line-height: 40px;\n  float: right; }\n\n.header-fixed .header-limiter nav a {\n  display: inline-block;\n  padding: 0 5px;\n  text-decoration: none;\n  color: #ffffff;\n  opacity: 0.9; }\n\n.header-fixed .header-limiter nav a:hover {\n  opacity: 1; }\n\n.header-fixed .header-limiter nav a.selected {\n  color: #608bd2;\n  pointer-events: none;\n  opacity: 1; }\n\n/* Fixed version of the header */\nbody.fixed .header-fixed {\n  padding: 10px 40px;\n  height: 50px;\n  position: fixed;\n  width: 100%;\n  top: 0;\n  left: 0;\n  z-index: 1; }\n\nbody.fixed .header-fixed-placeholder {\n  display: block; }\n\nbody.fixed .header-fixed .header-limiter h1 {\n  font-size: 24px;\n  line-height: 30px; }\n\nbody.fixed .header-fixed .header-limiter nav {\n  line-height: 28px;\n  font-size: 13px; }\n\n/* Making the header responsive */\n@media all and (max-width: 600px) {\n  .header-fixed {\n    padding: 20px 0;\n    height: 75px; }\n  .header-fixed .header-limiter h1 {\n    float: none;\n    margin: -8px 0 10px;\n    text-align: center;\n    font-size: 24px;\n    line-height: 1; }\n  .header-fixed .header-limiter nav {\n    line-height: 1;\n    float: none; }\n  .header-fixed .header-limiter nav a {\n    font-size: 13px; }\n  body.fixed .header-fixed {\n    display: none; } }\n\n/*\r\n     We are clearing the body's margin and padding, so that the header fits properly.\r\n     We are also adding a height to demonstrate the scrolling behavior. You can remove\r\n     these styles.\r\n */\n.main-container {\n  max-width: 960px;\n  margin: 0 auto; }\n\n.login-body {\n  background: url(\"http://i.imgur.com/Eor57Ae.jpg\") no-repeat fixed center center;\n  background-size: cover;\n  font-family: Montserrat;\n  padding: 1px 0;\n  min-height: 100vh; }\n\n.logo {\n  width: 213px;\n  height: 36px;\n  background: url(\"http://i.imgur.com/fd8Lcso.png\") no-repeat;\n  margin: 30px auto; }\n\n.login-block {\n  width: 320px;\n  padding: 20px;\n  background: #fff;\n  border-radius: 5px;\n  border-top: 5px solid #ff656c;\n  margin: 0 auto; }\n\n.login-block h1 {\n  text-align: center;\n  color: #000;\n  font-size: 18px;\n  text-transform: uppercase;\n  margin-top: 0;\n  margin-bottom: 20px; }\n\n.login-block input {\n  width: 100%;\n  height: 42px;\n  box-sizing: border-box;\n  border-radius: 5px;\n  border: 1px solid #ccc;\n  margin-bottom: 20px;\n  font-size: 14px;\n  font-family: Montserrat;\n  padding: 0 20px 0 50px;\n  outline: none; }\n\n.login-block input#username {\n  background: #fff url(\"http://i.imgur.com/u0XmBmv.png\") 20px top no-repeat;\n  background-size: 16px 80px; }\n\n.login-block input#username:focus {\n  background: #fff url(\"http://i.imgur.com/u0XmBmv.png\") 20px bottom no-repeat;\n  background-size: 16px 80px; }\n\n.login-block input#password {\n  background: #fff url(\"http://i.imgur.com/Qf83FTt.png\") 20px top no-repeat;\n  background-size: 16px 80px; }\n\n.login-block input#password:focus {\n  background: #fff url(\"http://i.imgur.com/Qf83FTt.png\") 20px bottom no-repeat;\n  background-size: 16px 80px; }\n\n.login-block input:active, .login-block input:focus {\n  border: 1px solid #ff656c; }\n\n.login-block button {\n  width: 100%;\n  height: 40px;\n  background: #ff656c;\n  box-sizing: border-box;\n  border-radius: 5px;\n  border: 1px solid #e15960;\n  color: #fff;\n  font-weight: bold;\n  text-transform: uppercase;\n  font-size: 14px;\n  font-family: Montserrat;\n  outline: none;\n  cursor: pointer; }\n\n.login-block button:hover {\n  background: #ff7b81; }\n\nul.topic-list {\n  margin-bottom: 14px;\n  list-style: none; }\n  ul.topic-list li {\n    height: 30px;\n    margin: 0 0 7px 0;\n    position: relative; }\n  ul.topic-list li a {\n    display: block;\n    height: 30px;\n    margin: 0 0 7px 0;\n    background: #F7F5F2 url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAcCAYAAACQ0cTtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAcVJREFUSEvtVtFNxDAM7QiMwAiMwAiMwAhs4PZSic8bgRFuhI5wI3QERjjyYjuJrnaagoSExElRT4njZzvPLxmG/99vVIBofhrHcB6neYnjM46bfBfME4XnH8cBJwIA5zoAqKOaD+u3QSUTdjaGD6LTixU95rGeg4mZHsqybO6PNpV6ClcNrguQpjBylOFKRA9dm8QI9hVgO0OOjg/fA6LT/IqA8LXLWgCbZ6hkaBlVhFm8rIVYCNq2IXp/lKxcJ3DeAyZ2F/hDtTZB0TS/pUWnPLqhFyyxFP5iyTdgykBk2CKFBeadr1spdWIB1cy8B1MGOvtW89zaYKUVarCa6jYYK822jCxBN2eTyBKaVhqX7RMJGvugowYYC63JHpCm0sZaJ9N/i1ScdQrksmWjOAQrzWZ1AE22RQcaoOmvRBJWt1mzlMkNEAXYsy0C4bA709/JLjWrKnwDSHsMtm4bSXY41KiNRuer4DYaX/RVfLR7dshR7QDaIpyEPN3ke0qU99fs8whwDyZydwxInUiG8t4Iq/XWgLozSFzXq2lHW5tnKJepgOZ3yKbX+Omwc0Yt0a3XkKkAQzWSDKVLFPMHb/RezL9l9wWuQAy9JbrovAAAAABJRU5ErkJggg==) 97% center no-repeat;\n    font-size: 16px;\n    line-height: 1.2;\n    color: #333;\n    padding: 5px 0 0 20px;\n    text-decoration: none; }\n  ul.topic-list li a:hover {\n    background-color: #EFEFEF; }\n  ul.topic-list .orange {\n    border-left: 5px solid #F5876E; }\n  ul.topic-list .blue {\n    border-left: 5px solid #61A8DC; }\n  ul.topic-list .green {\n    border-left: 5px solid #8EBD40; }\n  ul.topic-list .purple {\n    border-left: 5px solid #988CC3; }\n  ul.topic-list .gold {\n    border-left: 5px solid #D8C86E; }\n\n.progressbar {\n  display: inline-block;\n  height: 100%;\n  width: 100%;\n  position: absolute;\n  left: 0;\n  top: 0; }\n  .progressbar svg {\n    height: 100% !important; }\n", ""]);
+	exports.push([module.id, "* {\n  margin: 0;\n  padding: 0; }\n\n.light, .dark {\n  background: linear-gradient(45deg, rgba(12, 147, 207, 0.93) 0, rgba(0, 169, 128, 0.93) 97%);\n  color: white; }\n\n.light1 {\n  background: linear-gradient(45deg, #93a5cf 0, #e4efe9 97%);\n  color: white; }\n\n.light2 {\n  background: linear-gradient(45deg, #B7F8DB 0, #50A7C2 97%);\n  color: white; }\n\n.light3 {\n  background: linear-gradient(45deg, #ffafbd 0, #ffc3a0 97%);\n  color: white; }\n\n.light4 {\n  background: linear-gradient(45deg, #cc2b5e 0, #753a88 97%);\n  color: white; }\n\n.light5 {\n  background: linear-gradient(45deg, #36d1dc 0, #5b86e5 97%);\n  color: white; }\n\nbutton.btn-c {\n  font-size: 15px;\n  background: transparent;\n  color: #fff;\n  padding: 0px 20px;\n  box-sizing: border-box;\n  border: none;\n  cursor: pointer;\n  text-align: right;\n  width: 100%; }\n\n.bottom-fixed {\n  position: fixed;\n  top: 0;\n  right: 0; }\n  .bottom-fixed > span {\n    padding: 5px 10px;\n    display: block; }\n  .bottom-fixed:hover .list-dropdown {\n    transform: translateX(0%); }\n  .bottom-fixed img {\n    width: 60px; }\n\n.card-main-wrap {\n  max-width: 740px;\n  margin: 0 auto;\n  padding: 40px 0; }\n\n.card-wrap {\n  padding: 40px;\n  margin: 20px 0;\n  background: rgba(0, 0, 0, 0.2);\n  position: relative;\n  box-shadow: 0 0 16px 0px rgba(255, 255, 255, 0.5); }\n  .card-wrap .card-que span {\n    position: absolute;\n    width: 40px;\n    background: rgba(255, 255, 255, 0.2);\n    border-radius: 50%;\n    box-sizing: border-box;\n    height: 40px;\n    text-align: center;\n    padding: 8px 0;\n    left: -50px;\n    top: calc(50% - 20px);\n    font-style: normal; }\n  .card-wrap .card-que {\n    font-size: 16px;\n    font-style: italic;\n    margin-bottom: 10px;\n    color: rgba(255, 255, 255, 0.8); }\n  .card-wrap .card-label {\n    float: left;\n    font-size: 14px; }\n  .card-wrap .card-author {\n    position: absolute;\n    background: rgba(0, 0, 0, 0.2);\n    box-sizing: border-box;\n    height: 26px;\n    padding: 0px 10px;\n    right: 0;\n    bottom: 0;\n    font-style: normal;\n    width: 100%;\n    text-align: right;\n    font-size: 14px; }\n    .card-wrap .card-author .card-author-label {\n      font-style: italic; }\n  .card-wrap .card-author-wrap {\n    float: right; }\n\n.social-wrap {\n  text-align: center; }\n  .social-wrap > div {\n    display: inline-block;\n    margin: 10px;\n    cursor: pointer; }\n    .social-wrap > div:hover {\n      transform: scale(1.2);\n      transition: transform 0.2s linear; }\n\n.list-dropdown {\n  position: absolute;\n  right: 0;\n  bottom: 0;\n  border: 1px solid rgba(0, 0, 0, 0.1);\n  background: rgba(0, 0, 0, 0.1);\n  position: relative;\n  width: 100px;\n  left: 0;\n  transform: translateX(100%);\n  transition: transform 0.2s linear; }\n\n.nk-override-tab .tab-content > .active.fade {\n  opacity: 1; }\n\n.nk-override-tab .nav-tabs {\n  border-bottom: none; }\n  .nk-override-tab .nav-tabs li {\n    margin: 0px 10px;\n    color: #fff;\n    padding: 3px 5px;\n    border-bottom: 2px solid transparent; }\n    .nk-override-tab .nav-tabs li.active {\n      border-bottom: 2px solid #fff; }\n      .nk-override-tab .nav-tabs li.active a {\n        color: #fff; }\n    .nk-override-tab .nav-tabs li a {\n      color: rgba(255, 255, 255, 0.7);\n      font-weight: bold; }\n      .nk-override-tab .nav-tabs li a:hover, .nk-override-tab .nav-tabs li a:focus, .nk-override-tab .nav-tabs li a:active {\n        text-decoration: none; }\n\n.loading-spinner {\n  text-align: center;\n  margin: 0 auto; }\n\n.header-fixed {\n  background-color: #292c2f;\n  box-shadow: 0 1px 1px #ccc;\n  padding: 20px 40px;\n  height: 80px;\n  color: #ffffff;\n  box-sizing: border-box;\n  top: -100px;\n  -webkit-transition: top 0.3s;\n  transition: top 0.3s; }\n\n.header-fixed .header-limiter {\n  max-width: 1200px;\n  text-align: center;\n  margin: 0 auto; }\n\n/*  The header placeholder. It is displayed when the header is fixed to the top of the\r\n    browser window, in order to prevent the content of the page from jumping up. */\n.header-fixed-placeholder {\n  height: 80px;\n  display: none; }\n\n/* Logo */\n.header-fixed .header-limiter h1 {\n  float: left;\n  font: normal 28px Cookie, Arial, Helvetica, sans-serif;\n  line-height: 40px;\n  margin: 0; }\n\n.header-fixed .header-limiter h1 span {\n  color: #5383d3; }\n\n/* The navigation links */\n.header-fixed .header-limiter a {\n  color: #ffffff;\n  text-decoration: none; }\n\n.header-fixed .header-limiter nav {\n  font: 16px Arial, Helvetica, sans-serif;\n  line-height: 40px;\n  float: right; }\n\n.header-fixed .header-limiter nav a {\n  display: inline-block;\n  padding: 0 5px;\n  text-decoration: none;\n  color: #ffffff;\n  opacity: 0.9; }\n\n.header-fixed .header-limiter nav a:hover {\n  opacity: 1; }\n\n.header-fixed .header-limiter nav a.selected {\n  color: #608bd2;\n  pointer-events: none;\n  opacity: 1; }\n\n/* Fixed version of the header */\nbody.fixed .header-fixed {\n  padding: 10px 40px;\n  height: 50px;\n  position: fixed;\n  width: 100%;\n  top: 0;\n  left: 0;\n  z-index: 1; }\n\nbody.fixed .header-fixed-placeholder {\n  display: block; }\n\nbody.fixed .header-fixed .header-limiter h1 {\n  font-size: 24px;\n  line-height: 30px; }\n\nbody.fixed .header-fixed .header-limiter nav {\n  line-height: 28px;\n  font-size: 13px; }\n\n/* Making the header responsive */\n@media all and (max-width: 600px) {\n  .header-fixed {\n    padding: 20px 0;\n    height: 75px; }\n  .header-fixed .header-limiter h1 {\n    float: none;\n    margin: -8px 0 10px;\n    text-align: center;\n    font-size: 24px;\n    line-height: 1; }\n  .header-fixed .header-limiter nav {\n    line-height: 1;\n    float: none; }\n  .header-fixed .header-limiter nav a {\n    font-size: 13px; }\n  body.fixed .header-fixed {\n    display: none; } }\n\n/*\r\n     We are clearing the body's margin and padding, so that the header fits properly.\r\n     We are also adding a height to demonstrate the scrolling behavior. You can remove\r\n     these styles.\r\n */\n.main-container {\n  max-width: 960px;\n  margin: 0 auto; }\n\n.login-body {\n  background: url(\"http://i.imgur.com/Eor57Ae.jpg\") no-repeat fixed center center;\n  background-size: cover;\n  font-family: Montserrat;\n  padding: 1px 0;\n  min-height: 100vh; }\n\n.logo {\n  width: 213px;\n  height: 36px;\n  background: url(\"http://i.imgur.com/fd8Lcso.png\") no-repeat;\n  margin: 30px auto; }\n\n.login-block {\n  width: 320px;\n  padding: 20px;\n  background: #fff;\n  border-radius: 5px;\n  border-top: 5px solid #ff656c;\n  margin: 0 auto; }\n\n.login-block h1 {\n  text-align: center;\n  color: #000;\n  font-size: 18px;\n  text-transform: uppercase;\n  margin-top: 0;\n  margin-bottom: 20px; }\n\n.login-block input {\n  width: 100%;\n  height: 42px;\n  box-sizing: border-box;\n  border-radius: 5px;\n  border: 1px solid #ccc;\n  margin-bottom: 20px;\n  font-size: 14px;\n  font-family: Montserrat;\n  padding: 0 20px 0 50px;\n  outline: none; }\n\n.login-block input#username {\n  background: #fff url(\"http://i.imgur.com/u0XmBmv.png\") 20px top no-repeat;\n  background-size: 16px 80px; }\n\n.login-block input#username:focus {\n  background: #fff url(\"http://i.imgur.com/u0XmBmv.png\") 20px bottom no-repeat;\n  background-size: 16px 80px; }\n\n.login-block input#password {\n  background: #fff url(\"http://i.imgur.com/Qf83FTt.png\") 20px top no-repeat;\n  background-size: 16px 80px; }\n\n.login-block input#password:focus {\n  background: #fff url(\"http://i.imgur.com/Qf83FTt.png\") 20px bottom no-repeat;\n  background-size: 16px 80px; }\n\n.login-block input:active, .login-block input:focus {\n  border: 1px solid #ff656c; }\n\n.login-block button {\n  width: 100%;\n  height: 40px;\n  background: #ff656c;\n  box-sizing: border-box;\n  border-radius: 5px;\n  border: 1px solid #e15960;\n  color: #fff;\n  font-weight: bold;\n  text-transform: uppercase;\n  font-size: 14px;\n  font-family: Montserrat;\n  outline: none;\n  cursor: pointer; }\n\n.login-block button:hover {\n  background: #ff7b81; }\n\nul.topic-list {\n  margin-bottom: 14px;\n  list-style: none; }\n  ul.topic-list li {\n    height: 30px;\n    margin: 0 0 7px 0;\n    position: relative; }\n  ul.topic-list li a {\n    display: block;\n    height: 30px;\n    margin: 0 0 7px 0;\n    background: #F7F5F2 url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAcCAYAAACQ0cTtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAcVJREFUSEvtVtFNxDAM7QiMwAiMwAiMwAhs4PZSic8bgRFuhI5wI3QERjjyYjuJrnaagoSExElRT4njZzvPLxmG/99vVIBofhrHcB6neYnjM46bfBfME4XnH8cBJwIA5zoAqKOaD+u3QSUTdjaGD6LTixU95rGeg4mZHsqybO6PNpV6ClcNrguQpjBylOFKRA9dm8QI9hVgO0OOjg/fA6LT/IqA8LXLWgCbZ6hkaBlVhFm8rIVYCNq2IXp/lKxcJ3DeAyZ2F/hDtTZB0TS/pUWnPLqhFyyxFP5iyTdgykBk2CKFBeadr1spdWIB1cy8B1MGOvtW89zaYKUVarCa6jYYK822jCxBN2eTyBKaVhqX7RMJGvugowYYC63JHpCm0sZaJ9N/i1ScdQrksmWjOAQrzWZ1AE22RQcaoOmvRBJWt1mzlMkNEAXYsy0C4bA709/JLjWrKnwDSHsMtm4bSXY41KiNRuer4DYaX/RVfLR7dshR7QDaIpyEPN3ke0qU99fs8whwDyZydwxInUiG8t4Iq/XWgLozSFzXq2lHW5tnKJepgOZ3yKbX+Omwc0Yt0a3XkKkAQzWSDKVLFPMHb/RezL9l9wWuQAy9JbrovAAAAABJRU5ErkJggg==) 97% center no-repeat;\n    font-size: 16px;\n    line-height: 1.2;\n    color: #333;\n    padding: 5px 0 0 20px;\n    text-decoration: none; }\n  ul.topic-list li a:hover {\n    background-color: #EFEFEF; }\n  ul.topic-list .orange {\n    border-left: 5px solid #F5876E; }\n  ul.topic-list .blue {\n    border-left: 5px solid #61A8DC; }\n  ul.topic-list .green {\n    border-left: 5px solid #8EBD40; }\n  ul.topic-list .purple {\n    border-left: 5px solid #988CC3; }\n  ul.topic-list .gold {\n    border-left: 5px solid #D8C86E; }\n\n.progressbar {\n  display: inline-block;\n  height: 100%;\n  width: 100%;\n  position: absolute;\n  left: 0;\n  top: 0; }\n  .progressbar svg {\n    height: 100% !important; }\n\n.table-form li {\n  list-style: none; }\n  .table-form li span {\n    display: inline-block;\n    padding: 10px; }\n    .table-form li span.left {\n      text-transform: capitalize;\n      min-width: 130px; }\n    .table-form li span.right {\n      min-width: 150px; }\n", ""]);
 
 	// exports
 
@@ -32882,28 +32882,216 @@
 	        ),
 	        _react2.default.createElement(
 	          'ul',
-	          null,
-	          this.state.planet && this.state.planet.map(function (item) {
-	            return _react2.default.createElement(
-	              'li',
+	          { className: 'table-form' },
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'left' },
+	              'name'
+	            ),
+	            _react2.default.createElement(
+	              'span',
 	              null,
-	              _react2.default.createElement(
-	                'span',
-	                { className: 'left' },
-	                item.key
-	              ),
-	              _react2.default.createElement(
-	                'span',
-	                null,
-	                ':'
-	              ),
-	              _react2.default.createElement(
-	                'span',
-	                { className: 'right' },
-	                item.value
-	              )
-	            );
-	          })
+	              ':'
+	            ),
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'right' },
+	              this.state.planet.name
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'left' },
+	              'rotation_period'
+	            ),
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              ':'
+	            ),
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'right' },
+	              this.state.planet.rotation_period
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'left' },
+	              'orbital_period'
+	            ),
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              ':'
+	            ),
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'right' },
+	              this.state.planet.orbital_period
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'left' },
+	              'diameter'
+	            ),
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              ':'
+	            ),
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'right' },
+	              this.state.planet.diameter
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'left' },
+	              'climate'
+	            ),
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              ':'
+	            ),
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'right' },
+	              this.state.planet.climate
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'left' },
+	              'gravity'
+	            ),
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              ':'
+	            ),
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'right' },
+	              this.state.planet.gravity
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'left' },
+	              'terrain'
+	            ),
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              ':'
+	            ),
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'right' },
+	              this.state.planet.terrain
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'left' },
+	              'surface_water'
+	            ),
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              ':'
+	            ),
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'right' },
+	              this.state.planet.surface_water
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'left' },
+	              'population'
+	            ),
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              ':'
+	            ),
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'right' },
+	              this.state.planet.population
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'left' },
+	              'created'
+	            ),
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              ':'
+	            ),
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'right' },
+	              this.state.planet.created
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            null,
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'left' },
+	              'edited'
+	            ),
+	            _react2.default.createElement(
+	              'span',
+	              null,
+	              ':'
+	            ),
+	            _react2.default.createElement(
+	              'span',
+	              { className: 'right' },
+	              this.state.planet.edited
+	            )
+	          )
 	        )
 	      );
 	    }
