@@ -33,5 +33,8 @@ const colorSet = [
 ];
 export function randomColor() {
 	return colorSet[Math.floor(Math.random() * Math.floor(25))];
-	// return 'rgba(128, 0, 32, 0.2)';
+}
+
+export function randomColorWR() {
+	return Math.floor(Math.random() * Math.floor(25));
 }

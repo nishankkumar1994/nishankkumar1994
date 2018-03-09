@@ -1,7 +1,7 @@
 var webpack = require('webpack')
 
 module.exports = {
-  entry: "./src/scripts",
+  entry: ['babel-regenerator-runtime', "./src/scripts"],
   output: {
     publicPath: "/dist/scripts/",
     path: __dirname + "/dist/scripts",
@@ -17,7 +17,8 @@ module.exports = {
         loader: "babel",
         exclude: "/node_modules",
         query: {
-          presets: ["es2015", "react"]
+          presets: ["es2015", "stage-0", "react"],
+          plugins: ["transform-async-to-generator"]
         }
       },
       {
@@ -32,7 +33,8 @@ module.exports = {
         // options: {
         //   name: 'images/[name]-[hash].[ext]'
         // }
-      }
+      },
+      { test: /\.map$/, use: "source-map-loader", enforce: "pre" }
 
 
 
