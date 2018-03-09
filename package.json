@@ -19,6 +19,7 @@
     "file-loader": "^1.1.9",
     "react": "^15.6.2",
     "react-bootstrap": "^0.32.1",
+    "react-cookie": "^2.1.4",
     "react-dom": "^15.6.2",
     "react-google-sheet-connector": "^1.0.1",
     "react-progressbar.js": "^0.2.0",

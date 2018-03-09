@@ -9,12 +9,6 @@ class App extends React.Component {
 		super(props)
 	}
 
-	// toggleTheme(theme) {
-	// 	const newTheme = theme;
-	// 	localStorage ? localStorage.setItem('THEME_COLOR', theme) : '';
-	// 	this.props.dispatchThemeChange(newTheme)
-	// }
-
 	render() {
 		return (
 			 <Router>
