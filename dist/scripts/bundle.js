@@ -28835,10 +28835,10 @@
 							null,
 							'Login'
 						),
-						_react2.default.createElement('input', { type: 'text', name: 'name', placeholder: 'Username', value: 'Luke Skywalker', id: 'username', onChange: function onChange(e) {
+						_react2.default.createElement('input', { type: 'text', name: 'name', placeholder: 'Username', id: 'username', onChange: function onChange(e) {
 								return _this3.onChangeUpdate(e);
 							} }),
-						_react2.default.createElement('input', { type: 'password', name: 'password', placeholder: 'Password', id: 'password', value: '19BBY', onChange: function onChange(e) {
+						_react2.default.createElement('input', { type: 'password', name: 'password', placeholder: 'Password', id: 'password', onChange: function onChange(e) {
 								return _this3.onChangeUpdate(e);
 							} }),
 						_react2.default.createElement(
