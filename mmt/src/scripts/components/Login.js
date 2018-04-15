@@ -48,8 +48,8 @@ class Login extends React.Component {
 				<div className="logo" />
 				<div className="login-block">
 				    <h1>Login</h1>
-				    <input type="text" name="name" placeholder="Username" value="Luke Skywalker" id="username" onChange={(e)=>this.onChangeUpdate(e)} />
-				    <input type="password" name="password" placeholder="Password" id="password" value="19BBY" onChange={(e)=>this.onChangeUpdate(e)} />
+				    <input type="text" name="name" placeholder="Username" id="username" onChange={(e)=>this.onChangeUpdate(e)} />
+				    <input type="password" name="password" placeholder="Password" id="password" onChange={(e)=>this.onChangeUpdate(e)} />
 				    <button onClick={()=>this.submitForm()}>Submit</button>
 				</div>
 	        </div>
